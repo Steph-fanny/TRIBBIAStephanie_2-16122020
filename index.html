@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <title>projet2</title>
+
+    </head>
+
+    <body>
+        <header>
+            <img src="../maquette projet/images/logo/Reservia@3x.png" alt="logo reservia"/>
+            <nav>
+                <a href="#hebergements">Hébergements</a>
+                <a href="#Activités">Activités</a>               
+                <a href="#S'inscrire">S'inscrire</a>
+            </nav>
+            
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form method="post" action="traitement.php">
+                <p>                    
+                    <input type="search" name="ville" placeholder="votre ville"/>
+                </p>
+
+            </form>
+
+        </header>
+
+        <main>
+            <nav>    
+                <ul>
+                    <li>Filtres</li>
+                    <li>Economique</li>  
+                    <li>Familial</li>   
+                    <li>Romantique</li> 
+                    <li>Animaux autorisés</li>
+                    
+                </ul>
+        
+            </nav>
+<!--les plus populaires-->     
+            <aside class="fond-gris ">
+                <h2>Les plus populaires</h2>
+                <div id="conteneur"></div>
+     <!--1 ere photo-->           
+                    <div class="image"><img src="../maquette projet/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"alt="image hebergement"/></div>
+                    <h3>Hôtel Le soleil du matin</h3>
+                    <p>Nuit à partir de 128eur</p>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+    <!--2eme photo-->               
+                    <div class="image"><img src="../maquette projet/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"alt="image hebergement"/></div>/>
+                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                    <p>Nuit à partir de 71 eur</p>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star-half-o" aria-hidden="true"></i>
+                    
+     <!--3eme photo-->              
+                     <div class="image"><img src="../maquette projet/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"alt="image hebergement"/></div>
+                     <h3>Hôtel Tout bleu et Blanc</h3>
+                     <p>Nuit à partir de 68eur</p>
+                     <i class="fas fa-star" aria-hidden="true"></i>
+                     <i class="fas fa-star" aria-hidden="true"></i>
+                     <i class="fas fa-star" aria-hidden="true"></i>
+                     <i class="fas fa-star" aria-hidden="true"></i>
+                     <i class="fas fa-star-half-o" aria-hidden="true"></i>
+
+                </div>
+            </aside>
+
+ <!--hebergement-->            
+            <section class="fond-gris ">
+                    <h2 id="hebergements">Hébergements à Marseille</h2> 
+                    <div id="conteneur"> 
+                    <div class="image"><img src="../maquette projet/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"alt="image logement"/></div>
+                    <div class="image"><img src="../maquette projet/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image logement"/></div>
+                    <div class="image"><img src="../maquette projet/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"alt="image logement"/></div>/>
+                </div>    
+            </section>
+   
+   <!--activités-->     
+            <section>   
+                <h2 id="Activités">Activités à Marseille</h2>
+                <article>
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        alt="Vieux Port"/>
+                     <h3>Vieux Port</h3>      
+                </article>
+                
+                <article>
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        alt="Fort de Pomégues"/>
+                    <figcaption>Fort de Pomégues</figcaption>       
+                </article>
+        
+                <article>
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                        alt="Îles du Frioul"/>
+                    <figcaption>Îles du Frioul</figcaption>       
+                </article>
+        
+                <article>
+                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        alt="Parc National des Calanques"/>
+                    <figcaption>Parc National des Calanques</figcaption>       
+                </article>
+                
+                <article>
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                        alt="Notre-Dame-de-la-Garde"/>
+                    <figcaption>Notre-Dame-de-la-Garde</figcaption>       
+                </article>
+                
+                <article>
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                        alt="Parc Longchamp"/>
+                    <figcaption>Parc Longchamp</figcaption>       
+                </article>
+                
+                
+        
+            </section>
+        </main>
+
+        <footer> 
+
+
+        </footer>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
