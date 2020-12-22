@@ -20,6 +20,11 @@
 
 
 
+
+.fa fa-star{
+    color:#0065FC;
+}
+
 i{ color : black; }
 
 .star { font-size: 2em;}
@@ -41,6 +46,6 @@ i{ color : black; }
 
 }
 .element{
-
+border:solid;
 
 }

@@ -9,7 +9,9 @@
 
     <body>
         <header>
+    <!--logo-->    
             <img src="../maquette projet/images/logo/Reservia@3x.png" alt="logo reservia"/>
+    <!--navigation-->
             <nav>
                 <a href="#hebergements">Hébergements</a>
                 <a href="#Activités">Activités</a>               
@@ -18,19 +20,27 @@
             
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <form method="post" action="traitement.php">
-                <p>                    
-                    <input type="search" name="ville" placeholder="votre ville"/>
-                </p>
+    <!--formulaire rechercher-->
+            <section class="rechercher">
+            <!--icone-->
+                <i class="fas fa-map-marker-alt"></i>
+            <!--chercher ville-->
+                <form method="post" action="traitement.php">                             
+                <input class="rechercheville" type="search" name="ville" placeholder="votre ville"/>
+                </form>
+            <!--bouton rechercher-->
+                 <form method="post" action="traitement.php"></form>
+                <input class= "boutonrechercher" type="submit" value="rechercher"/>
 
-            </form>
+            </section>   
+            
 
         </header>
 
         <main>
-            <nav>    
+            <nav> 
+                <h4> Filtres</h4>   
                 <ul>
-                    <li>Filtres</li>
                     <li>Economique</li>  
                     <li>Familial</li>   
                     <li>Romantique</li> 
@@ -42,35 +52,36 @@
 <!--les plus populaires-->     
             <aside class="fond-gris ">
                 <h2>Les plus populaires</h2>
-                <div id="conteneur"></div>
-     <!--1 ere photo-->           
+                <div class="conteneur-annonces">
+        <!--1 ere annonce-->           
+                    <article class="annonce annonce-horizontal"></article>
                     <div class="image"><img src="../maquette projet/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"alt="image hebergement"/></div>
                     <h3>Hôtel Le soleil du matin</h3>
                     <p>Nuit à partir de 128eur</p>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-    <!--2eme photo-->               
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+        <!--2eme photo-->               
                     <div class="image"><img src="../maquette projet/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"alt="image hebergement"/></div>/>
                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                    <p>Nuit à partir de 71 eur</p>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star-half-o" aria-hidden="true"></i>
+                    <p>Nuit à partir de 71</p>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
                     
      <!--3eme photo-->              
                      <div class="image"><img src="../maquette projet/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"alt="image hebergement"/></div>
                      <h3>Hôtel Tout bleu et Blanc</h3>
                      <p>Nuit à partir de 68eur</p>
-                     <i class="fas fa-star" aria-hidden="true"></i>
-                     <i class="fas fa-star" aria-hidden="true"></i>
-                     <i class="fas fa-star" aria-hidden="true"></i>
-                     <i class="fas fa-star" aria-hidden="true"></i>
-                     <i class="fas fa-star-half-o" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
 
                 </div>
             </aside>
