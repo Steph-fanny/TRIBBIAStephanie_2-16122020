@@ -1,8 +1,190 @@
-/*mettre la police*/
+/*police*/
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.eot');
+    src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),       
+         url('fonts/raleway-regular-webfont.woff') format('woff'),
+         url('fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*generale*/
+body{
+    width: 576px;
+    font-family:'ralewayregular';   
+    border:solid black 2px;
+    margin : 0 auto;
+   
+}
+
+h1{
+    text-align:center;
+    font-size: 1 em;
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 1em;
+}
+    
+P{
+    text-align:center;
+    font-size: 1 em;
+}
 
 
 
-/*media queries */
+/*header*/
+
+.logo{
+    float:inline-start;
+    top:5px;
+    left:10px;
+    
+   }
+
+/*navigation*/
+.navigation{
+    display : flex;
+    flex-flow: row wrap;  
+    justify-content: flex-end;
+    align-content: flex-end;    
+            
+}
+
+.navinscription{
+    color:#0065FC;
+    font-weight:bold;
+    text-decoration: none;
+    
+    
+
+ }
+.navlien{
+    padding:5px;
+    text-decoration: underline;  
+         
+}
+
+
+/*zone rechercher*/
+.fa-map-marker-alt{
+    color:black; 
+    background-color:grey;
+    border : solid #F2F2F2;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+
+.rechercher{
+    width: 576px;
+    display : flex;
+    flex-direction: row;     
+    align-items: flex-start;
+}
+
+.fa-search{
+    color:white;    
+    background-color:#0065FC ;
+    border : solid #0065FC;
+    border-radius: 5px;
+}
+  
+
+.partie-filtre{
+    display : flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+
+.choixfiltres{
+    display : flex;
+    flex-flow: row wrap;    
+    align-items: center;
+
+}
+.filtresicones{
+    color:#0065FC;    
+    background-color:#DEEBFF ;
+    border:#DEEBFF 1px;
+    border-radius: 20px;
+}
+    
+
+.recherchesfiltres{
+    border : solid grey 1px;
+    border-radius: 10px;
+    background-color:white;
+    font-weight : bold;
+
+}
+
+.info{
+    display : flex;
+    flex-flow: row wrap;
+    
+}
+
+.logementdispo{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.fa-star { color: #0065FC;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fond-gris{
+    background-color:#F2F2F2;
+
+
+}
+
+
+
+
+
+.element{
+border:solid;
+
+}
+
+
+
+
+/*media queries 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { ... }
 
@@ -17,35 +199,3 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
-
-
-
-
-.fa fa-star{
-    color:#0065FC;
-}
-
-i{ color : black; }
-
-.star { font-size: 2em;}
-
-
-.fond-gris{
-    background-color:#F2F2F2;
-
-
-}
-
-#conteneur{
-    display : flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    border: 2px solid black;
-    justify-content: center;
-
-
-}
-.element{
-border:solid;
-
-}

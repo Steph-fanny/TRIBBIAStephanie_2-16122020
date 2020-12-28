@@ -8,29 +8,30 @@
     </head>
 
     <body>
-        <header>
-    <!--logo-->    
-            <img src="../maquette projet/images/logo/Reservia@3x.png" alt="logo reservia"/>
-    <!--navigation-->
-            <nav>
-                <a href="#hebergements">Hébergements</a>
-                <a href="#Activités">Activités</a>               
-                <a href="#S'inscrire">S'inscrire</a>
-            </nav>
+        <header class="header">
+            <!--logo-->    
+                <img class="logo" src="../maquette projet/images/logo/Reservia.svg"  alt="logo reservia"/>  
+            <!--lien navigation-->
+                <nav class="navigation">
+                    <a class="navinscription" href="#">S'inscrire</a>
+                    <a class="navlien" href="#hebergements">Hébergements</a>
+                    <a class="navlien" href="#Activités">Activités</a>               
+                    
+                </nav>
             
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-    <!--formulaire rechercher-->
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            <!--formulaire rechercher-->
             <section class="rechercher">
-            <!--icone-->
-                <i class="fas fa-map-marker-alt"></i>
+                 <!--icone-->
+            <i class="fas fa-map-marker-alt"></i>
             <!--chercher ville-->
                 <form method="post" action="traitement.php">                             
                 <input class="rechercheville" type="search" name="ville" placeholder="votre ville"/>
                 </form>
             <!--bouton rechercher-->
                  <form method="post" action="traitement.php"></form>
-                <input class= "boutonrechercher" type="submit" value="rechercher"/>
+                 <i class="fa fa-search" aria-hidden="true"></i>
 
             </section>   
             
@@ -38,64 +39,138 @@
         </header>
 
         <main>
-            <nav> 
-                <h4> Filtres</h4>   
-                <ul>
-                    <li>Economique</li>  
-                    <li>Familial</li>   
-                    <li>Romantique</li> 
-                    <li>Animaux autorisés</li>
+            <nav class="filtres">
+                <h3 class="filtrestitre"> Filtres<h3>  
+             <section class = "partie-filtre">
+        <!--economique--> 
+                <bouton class="choixfiltres">  
+                    <i class="fas fa-money-bill-wave filtresicones" aria-hidden="true"></i>     
+                     Economique
+                </bouton>
+        <!--familial-->
+                 <article class="choixfiltres">
+                    <i class="fas fa-child filtresicones"></i>
+                    <input class="recherchesfiltres" type ="submit" value = "Familial"/>
+                </article>
+        <!--romantique-->  
+                <article class="choixfiltres">       
+                    <i class="fas fa-heart filtresicones" aria-hidden="true"></i>
+                    <input class="recherchesfiltres" type ="submit" value = "Romantique"/>
+                </article>
+        <!--animaux-->
+                <article class="choixfiltres">
+                    <i class= "fas fa-dog filtresicones"></i>
+                    <input class="recherchesfiltres" type ="submit" value = "Animaux autorisés"/>
+                </article>
                     
-                </ul>
+            </section>
         
+        <!--nombre de logements disponibles--> 
+                <article class="info">
+                    <i class="fa fa-info filtresicones" aria-hidden="true"></i>
+                    <p class="logementdispo">Plus de 500 logements sont disponibles dans cette ville </p>
+                </article>
+
             </nav>
+
+
+
+
+
+
+
+
+
+
 <!--les plus populaires-->     
             <aside class="fond-gris ">
                 <h2>Les plus populaires</h2>
                 <div class="conteneur-annonces">
         <!--1 ere annonce-->           
-                    <article class="annonce annonce-horizontal"></article>
-                    <div class="image"><img src="../maquette projet/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"alt="image hebergement"/></div>
-                    <h3>Hôtel Le soleil du matin</h3>
-                    <p>Nuit à partir de 128eur</p>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-        <!--2eme photo-->               
-                    <div class="image"><img src="../maquette projet/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"alt="image hebergement"/></div>/>
-                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                    <p>Nuit à partir de 71</p>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                    
-     <!--3eme photo-->              
-                     <div class="image"><img src="../maquette projet/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"alt="image hebergement"/></div>
-                     <h3>Hôtel Tout bleu et Blanc</h3>
-                     <p>Nuit à partir de 68eur</p>
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <article class="annonce annonce-horizontal">
+                        <div class="image"><img src="../maquette projet/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"alt="image hebergement"/></div>
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir de 128eur</p>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                    </article>
+        <!--2 eme annonce-->  
+                    <article class="annonce annonce-horizontal">    
+                         <div class="image"><img src="../maquette projet/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"alt="image hebergement"/></div>
+                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p>Nuit à partir de 71</p>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fas fa-star-half-alt"></i>
 
-                </div>
+                    </article> 
+        <!--3eme annonce-->   
+                    <article class="annonce annonce-horizontal"> 
+                        <div class="image"><img src="../maquette projet/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"alt="image hebergement"/></div>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+                            <p>Nuit à partir de 68eur</p>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </article> 
+                        
             </aside>
 
- <!--hebergement-->            
+ <!--hebergement-->                  
             <section class="fond-gris ">
-                    <h2 id="hebergements">Hébergements à Marseille</h2> 
-                    <div id="conteneur"> 
-                    <div class="image"><img src="../maquette projet/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"alt="image logement"/></div>
-                    <div class="image"><img src="../maquette projet/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image logement"/></div>
-                    <div class="image"><img src="../maquette projet/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"alt="image logement"/></div>/>
-                </div>    
+                    <h2>Hébergements à Marseille</h2> 
+            <!--1 ere annonce-->
+                    <article class="annonce-verticale"> 
+                        <div class="image"><img src="../maquette projet/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"alt="image logement"/></div>
+                        <h3>Auberge la Cannebiére</h3>
+                        <p>Nuit à partir de 25eur</p>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </article>
+            <!--2eme annonce-->   
+                    <article class="annonce-verticale"> 
+                        <div class="image"><img src="../maquette projet/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image logement"/></div>
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de 52eur</p>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </article>
+             <!--3eme annonce--> 
+                    <article class="annonce-verticale"> 
+                        <div class="image"><img src="../maquette projet/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"alt="image logement"/></div>
+                        <h3>Hôtel les mouettes</h3>
+                        <p>Nuit à partir de 76eur</p>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </article>
+
+
+
             </section>
    
+
+
+
+
+
+
+
+
+
    <!--activités-->     
             <section>   
                 <h2 id="Activités">Activités à Marseille</h2>
