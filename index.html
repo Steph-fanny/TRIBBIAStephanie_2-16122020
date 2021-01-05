@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <title>projet2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
 
@@ -41,7 +42,7 @@
 
         <main>
             <nav class="filtres">
-                <h3 class="filtrestitre"> Filtres<h3>  
+                <h3 class="filtrestitre"> Filtres</h3>  
                 <section class = "partie-filtre">
         <!--economique--> 
                 <bouton class="choixfiltres">  
@@ -82,61 +83,68 @@
                 <h2 class="titre-populaire">Les plus populaires<i class="fas fa-chart-line"></i></h2>
                 <div class="conteneur-annoncespopulaire">
         <!--1 ere annonce-->           
-                    <article class="annonce annonce-horizontal">
-                        
+                    <article class="annonce annoncehorizontale">                        
                         <img class="image-horizontale"
                         src="../maquette projet/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                        alt="image hebergement"/>
-                       
-                        <div class="descriptif-annonceh">
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de <strong>128 <i class="fas fa-euro-sign"></i>
-                                </strong></p>
-                            <div class="espace-vide"></div>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        alt="image hebergement"/>                       
+                        <div class="descriptifannoncehorizontale">
+                            <div class="hotelprix">
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <h5>Nuit à partir de <span class="gras">128 <i class="fas fa-euro-sign"></i>
+                                </span></h5>   
+                            </div>   
+                            <div class="etoiles">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
-                           
                     </article>
-        <!--2 eme annonce-->  
-                    <article class="annonce annonce-horizontal">
-                           
-                         <img class="image-horizontale" 
+      <!-- 2 eme annonce-->
+                    <article class="annonce annoncehorizontale">
+                        <img class="image-horizontale" 
                          src="../maquette projet/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                          alt="image hebergement"/>
-                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                            <p>Nuit à partir de <strong>71 <i class="fas fa-euro-sign"></i>
-                            </strong></p>
-                            <div class="espace-vide"></div>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star etoilegrise"></i>
-                     
+                         <div class="descriptifannoncehorizontale">
+                            <div class="hotelprix">
+                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                <h5>Nuit à partir de <span class="gras">71 <i class="fas fa-euro-sign"></i>
+                                </span></h5>    
+                            </div>                        
+                            <div class="etoiles">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star etoilegrise"></i>
+                            </div>
+                         </div>   
                     </article> 
         <!--3eme annonce-->   
-                    <article class="annonce annonce-horizontal">
+                    <article class="annonce annoncehorizontale">
                         
                         <img class="image-horizontale" 
                         src="../maquette projet/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="image hebergement"/>
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>Nuit à partir de <strong>128 <i class="fas fa-euro-sign"></i>
-                            </strong></p>
-                            <div class="espace-vide"></div>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star etoilegrise"></i>
-                           
+                        <div class="descriptifannoncehorizontale">
+                            <div class="hotelprix">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <h5>Nuit à partir de <span class="gras">68 <i class="fas fa-euro-sign"></i>
+                                </span></h5> 
+                            </div>
+                            <div class="etoiles">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star etoilegrise"></i>
+                            </div>
+                        </div>  
                     </article> 
                 </div>       
-            </aside>
+            </aside> 
 
 
 
@@ -147,74 +155,104 @@
                 <div class="conteneur-annonces">
             <!--1 ere annonce-->
                     <article class="annonce annonce-verticale"> 
-                        <img class="image-verticale"src="../maquette projet/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"alt="image logement"/>
+                        <img class="image-verticale"
+                        src="../maquette projet/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="image logement"/>
                         <h3>Auberge la Cannebiére</h3>
-                        <p>Nuit à partir de 25eur</p>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star etoilegrise"></i>
+                        <p>Nuit à partir de <strong>25 <i class="fas fa-euro-sign"></i>
+                        </strong></p>
+                        <div class="etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star etoilegrise"></i>
+                        </div>
                     </article>
             <!--2eme annonce-->   
                     <article class="annonce annonce-verticale"> 
-                        <img class="image-verticale" src="../maquette projet/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image logement"/>
+                        <img class="image-verticale" 
+                        src="../maquette projet/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
+                        alt="image logement"/>
                         <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de 52eur</p>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <p>Nuit à partir de <strong>52 <i class="fas fa-euro-sign"></i>
+                        </strong></p>
+                        <div class="etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                      </article>
              <!--3eme annonce--> 
                     <article class="annonce annonce-verticale"> 
-                        <img class="image-verticale" src="../maquette projet/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"alt="image logement"/>
+                        <img class="image-verticale" 
+                        src="../maquette projet/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="image logement"/>
                         <h3>Hôtel les mouettes</h3>
-                        <p>Nuit à partir de 76eur</p>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star etoilegrise"></i>
+                        <p>Nuit à partir de <strong>76 <i class="fas fa-euro-sign"></i>
+                        </strong></p>
+                        <div class="etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star etoilegrise"></i>
+                        </div>
                     </article>
             <!--4eme annonce--> 
                     <article class="annonce annonce-verticale"> 
-                         <img class="image-verticale" src="../maquette projet/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"alt="image logement"/>
+                         <img class="image-verticale" 
+                         src="../maquette projet/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                         alt="image logement"/>
                          <h3>Hôtel de la mer</h3>
-                        <p>Nuit à partir de 46eur</p>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star etoilegrise"></i>
-                        <i class="fas fa-star etoilegrise"></i>
+                        <p>Nuit à partir de <strong>46 <i class="fas fa-euro-sign"></i>
+                        </strong></p>
+                        <div class="etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star etoilegrise"></i>
+                            <i class="fas fa-star etoilegrise"></i>
+                        </div>
                     </article>
             <!--5eme annonce--> 
                     <article class="annonce annonce-verticale"> 
-                        <img class="image-verticale" src="../maquette projet/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"alt="image logement"/>
+                        <img class="image-verticale" 
+                        src="../maquette projet/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        alt="image logement"/>
                         <h3>Hôtel lee Panier</h3>
-                        <p>Nuit à partir de 23eur</p>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star etoilegrise"></i>
+                        <p>Nuit à partir de <strong>23 <i class="fas fa-euro-sign"></i>
+                        </strong></p>
+                        <div class="etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star etoilegrise"></i>
+                        </div>
                     </article>
             <!--6eme annonce--> 
                      <article class="annonce annonce-verticale"> 
-                        <img class="image-verticale" src="../maquette projet/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"alt="image logement"/>
+                        <img class="image-verticale" 
+                        src="../maquette projet/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        alt="image logement"/>
                         <h3>Hôtel chez Amina</h3>
-                        <p>Nuit à partir de 96eur</p>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <p>Nuit à partir de <strong>96<i class="fas fa-euro-sign"></i>
+                        </strong></p>
+                        <div class="etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </article>
             </div>   
             </section>
    
-
+        
 
 
    <!--activités-->     
@@ -223,39 +261,40 @@
                 <div class="conteneur-activites">
         <!--vieux port-->   
                 <article class=" annonce annonce-verticale">
-                    <img class="image-activite"src="../maquette projet/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                        alt="Vieux Port"/>
-                     <h3>Vieux Port</h3>      
+                    <img class="image-activite"
+                    src="../maquette projet/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    alt="Vieux Port"/>
+                     <h3 class="nomactivite">Vieux Port</h3>      
                 </article>
          <!--Fort de Pomégues-->        
                 <article class="annonce annonce-verticale">
                     <img class="image-activite" src="../maquette projet/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                         alt="Fort de Pomégues"/>
-                    <h3>Fort de Pomégues</h3>      
+                    <h3 class="nomactivite">Fort de Pomégues</h3>      
                 </article>
         <!--Îles du Frioul--> 
                 <article class="annonce annonce-verticale">
                     <img class="image-activite" src="../maquette projet/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                         alt="Îles du Frioul"/>
-                    <h3>Îles du Frioul</h3>       
+                    <h3 class="nomactivite">Îles du Frioul</h3>       
                 </article>
         <!--Parc National des Calanques-->
                 <article class="annonce annonce-verticale">
                     <img class="image-activite" src="../maquette projet/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                         alt="Parc National des Calanques"/>
-                    <h3>Parc National des Calanques</h3>       
+                    <h3 class="nomactivite">Parc National des Calanques</h3>       
                 </article>
         <!--Notre-Dame-de-la-Garde-->        
                 <article class="annonce annonce-verticale">
                     <img class="image-activite" src="../maquette projet/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                         alt="Notre-Dame-de-la-Garde"/>
-                    <h3>Notre-Dame-de-la-Garde</h3>       
-                </article>
+                    <h3 class="nomactivite">Notre-Dame-de-la-Garde</h3>       
+                </article> 
          <!--Parc Longchamp-->       
                 <article class="annonce annonce-verticale">
                     <img class="image-activite" src="../maquette projet/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                         alt="Parc Longchamp"/>
-                    <h3>Parc Longchamp</h3>       
+                    <h3 class="nomactivite">Parc Longchamp</h3>       
                 </article>
                 
                 </div> 
@@ -266,27 +305,29 @@
         
         
         <footer> 
-            <section class="fond-gris"></section>
+            <div class="footer fond-gris" >
         <!--a propos-->        
-                <article>
+                <nav class="lienfooter">
                     <h3>A propos</h3>
-                    <a href="#">Fonctionnement du site</a></br>                    
+                    <a href="#">Fonctionnement du site</a>                   
                     <a href="#">Condition générales de vente</a>
                     <a href="#">Données et confidentialité</a>
-                </article>
+                </nav>
+                
          <!--nos hebergements-->   
-                <article>
+                <nav class="lienfooter">
                     <h3>Nos hébergements</h3>
                     <a href="#">Charte qualité</a>
                     <a href="#">Soumettre votre hôtel</a>
-                </article>
+                </nav>
+                    
         <!--assistance-->   
-                <article>
+                <nav class="lienfooter">        
                     <h3>Assistance</h3>
                     <a href="#">Centre d'aide</a>
                     <a href="#">Nous contacter</a>
-                </article>
-
+                </nav>
+            </div>
            
         </footer>
 
