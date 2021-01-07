@@ -25,7 +25,7 @@ body{
 
 h1{
     text-align:left;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: bold;
     margin:5px 0px 0px 8px;
     }
@@ -268,7 +268,6 @@ a{
     }   
 
 
-}
  
 /*aside*/
 .titre-populaire{
@@ -363,29 +362,122 @@ border:solid;
 
 }
 
-/*// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }*/
 
-/*@media only screen and (min-width:900px){
-    
+/*-----ecran large------*/
+@media screen and (min-width: 900px) { 
+
+.site{ 
     width: 100%;
-    display:grid;
-    grid-template-columns:
+    display: grid;
+    grid-template-columns: 60% 35%;
     grid-template-areas:
-    "header header header header header"
-    "search search search search search "
-    "filter filter filter filter filter"
-    ". main . aside . "
-    ". activity activity activity . "
-    "  footer footer footer footer footer"
+    " header header"
+    " rechercher rechercher "
+    " filtres filtres  "
+    " hebergements aside"
+    " activites activites "
+    " footer footer";
+ 
 
-    .nom photo
-    grid-column-start:
-    grid-column-end
-    grid-row-start
-    grid-row-end
+ }      
+   
+
+header{
+    grid-area:header;
+    }
+  
+.rechercher{
+    grid-area:rechercher;
+    }
+.filtres{
+    grid-area:filtres;
+    }
+
+.herbergements{
+    grid-area:hebergements;
+    }
+
+aside{
+    grid-area:aside;
+    }
+.activites{
+    grid-area:activites;
+    }
+footer{
+    grid-area:footer;
+    }
+
+
+
+
+
+
+.conteneur-activites{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-column-gap:10px;
+    grid-template-rows:repeat (6,1fr);
+    }
+
+.image-activite{
+    max-width: 100%;
+    height: 100%;
+}
+
+.vieux-port{
+    grid-column:2;
+    grid-row:1/span2;
 
 }
+
+.fort{
+    grid-column-start:2;
+    grid-row-start:1;
+}
+
+.iles{
+    grid-column-start:2;
+    grid-row-start:2;
+}
+
+.calanques{
+    grid-column-start:3;
+    grid-row:1/span2;
+    }
+
+.notre-dame{
+        grid-column-start:4;
+        grid-row-start:1;
+    }
+    
+.parc{
+        grid-column-start:4;
+        grid-row-start:2;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+    
+    
+
 
 
 
