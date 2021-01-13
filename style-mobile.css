@@ -1,3 +1,116 @@
+
+
+
+/*generale*/
+body{
+    font-family:'ralewayregular';
+    color:black; 
+    width: 100%;     
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;      
+    }
+
+h1{
+    text-align:left;
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin:15px 0px;
+    }
+
+h2{     
+    text-align:left; 
+    padding:15px ;
+    margin:0px;    
+    }
+
+h3{
+    font-size: 1em;
+    font-weight: bold;    
+    margin: 5px 0px;  
+    }
+ 
+h5{
+    font-size: 0.9em;
+    font-weight: normal;
+    width: 100%;
+    margin: 0px 10px 0px 0px;    
+    }
+
+P{
+    text-align:left;
+    width: 100%;
+    font-size: 0.9em;  
+    margin:0px;    
+    }
+
+.fa-star { 
+    color: #0065FC; 
+    font-size: 0.7em;   
+    }
+
+
+.etoile-grise{
+    color:#C5C2C2;
+    }
+
+.etoile{
+        display:flex;
+        flex-direction: row;
+        margin:5px 0px 5px 0px;
+        }
+
+.fond-gris{
+    background-color:#cccccc;
+    }
+
+img {
+        max-width: 100%;  
+        max-height: 100%;   
+        }
+
+.gras{
+    font-weight:bold;
+    }
+
+a{
+    text-decoration: none;
+    color:black;
+    }
+
+    
+.annonce{
+        display: flex;
+        border: white solid 4px;    
+        box-shadow: silver 3px 3px 0px 0px;
+        border-radius:10px; 
+        } 
+        
+header,main, footer,.nav-rechercher{
+    padding: 0px 10px 0px 10px;
+    }
+/*.aside,.hebergements,.activites, .conteneur-footer{
+    padding:0px 15px;    
+    }*/
+          
+
+    
+ .lienfooter:hover{
+    color:blue;
+    cursor:pointer;   
+    }
+
+ .nav-lien:hover{
+    font-size: 1em;
+        border-bottom: solid 3px blue ;         
+        color:blue;        
+        }
+.annonce-verticale:hover,.annonce-horizontale:hover{
+    transform:scale(1.1);   /*effet grossissement*/
+    }
+
+
+
 /*----header----*/
 .header{
     display:block;
@@ -149,19 +262,28 @@
 /*hebergement*/
 
 .hebergements{
-    margin:10px 0px;    
+    margin:10px 0px;  
+     
+     
     }
  
+.conteneur-annonces-hebergement{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;             
+        padding:0px 15px;
+        }
+
 .annonce-verticale{
     display:flex;      
     flex-direction: column;  
     justify-content: space-around;  
     background-color:white ;
-    Height:10em; 
-    width: 100%; 
-    border-radius: 10px 10px 0px 0px;  
-    margin:10px 0px 10px 0px; 
-    } 
+    Height:10em;
+    width:100%;          
+    margin:10px 0px;    
+        } 
     
 .image-verticale{
     display:flex;
@@ -180,12 +302,21 @@
    
 /*aside*/
 
+.conteneur-annonce-populaire{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;   
+    padding:0px 15px;
+    }
+
 .titre-populaire{
     display: flex;    
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 15px 0px 0px 0px;
+    padding: 15px 15px 0px 15px;
     }
 
 .annonce-horizontale{
@@ -194,7 +325,10 @@
     background-color: white;
     height:7em; 
     width: 100%; 
-    margin:10px 0px ;     
+    border-radius: 10px 10px 0px 0px;  
+    margin:10px 0px ;  
+ 
+     
     }
 
 .image-horizontale{
@@ -223,11 +357,20 @@
     padding:0px 0px 10px 0px;
     }   
 
-
 /*------activité-------*/
+
+.conteneur-activites{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0px;   
+    padding:0px 15px;
+    }
+
 .image-activite{    
     width: 100%;
-    max-height:auto;
+    height:100%;
     border-radius: 10px 10px 0px 0px;    
     overflow: hidden;
     object-fit: cover;
@@ -236,6 +379,7 @@
 .nomactivite{
     margin:10px;
     }
+
 
 /*footer*/
 
@@ -253,6 +397,7 @@
     align-items: center;
     justify-content: space-around;   
     margin:0px;
+    padding:0px 15px;
     }
 
 .nav-footer{
@@ -269,34 +414,25 @@
 
 
 
+/*media queries 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
 
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
 
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 
-
-
-
+/*
+@media screen and (min-width: 768px) {
+    .conteneur-annonces{
+        flex-direction: row;                
+        align-content:space-around;
       
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
+ } 
+*/
