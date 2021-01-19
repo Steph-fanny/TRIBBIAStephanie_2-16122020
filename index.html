@@ -3,135 +3,204 @@
         <meta charset="UTF-8"/>
     
         <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" media="screen and (min-width:400 px) and (max-width: 991px)" href="style-mobile.css"/>       
-        <link rel="stylesheet" media="screen and (min-width: 992px) " href="style-pc.css"/>
+        <link rel="stylesheet" media="screen and (min-width:576px) and (max-width: 767px)" href="style-mobile.css"/>       
+        
+        <link rel="stylesheet" media="screen and (min-width: 768px) " href="style-pc.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <title>projet2</title>
+        <meta name="description" content =" Reservia trouver votre hébergement pour des vacances de rêve">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body class="site">
-<!--header-->
+        <!--header-->
         <header class="header">
             <!--logo-->    
-                <img class="logo" src="../maquette projet/images/logo/Reservia.svg"  alt="logo reservia"/>  
+            <img class="logo" src="../maquette projet/images/logo/Reservia.svg"  alt="logo reservia"/> 
+            <!--en tête navigation hors logo--> 
+            <nav class="header-nav">
             <!--lien navigation-->
-                <a class="inscription" href="#">S'inscrire</a>
-                <nav class="navigation">
-                    <a class="nav-lien" href="#hebergements">Hébergements</a>
-                    <a class="nav-lien" href="#Activités">Activités</a>               
-                </nav>                 
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-        </header> 
+            <a class="inscription" href="#">S'inscrire</a>
+            <nav class="navigation">
+                <a class="nav-lien" href="#hebergements">Hébergements</a>
+                <a class="nav-lien" href="#Activités">Activités</a>               
+            </nav>  
+            </nav>  
 
-    <!--formulaire rechercher-->        
-        <section class="nav-rechercher"> 
-        <!--icone position-->         
-            <i class="fas fa-map-marker-alt"></i>
-        <!--chercher ville-->
-            <form method="post" action="traitement.php">                             
-            <input class="recherche-ville" type="search" name="ville" placeholder="Marseille, France"/>
-            </form>
-        <!--bouton rechercher-->
-            <form method="post" action="traitement.php"></form>                 
-            <i class="fas fa-search"></i>
-        </section>   
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+      
+    
+            <!--formulaire rechercher-->
+            <bouton class="bouton-primaire">
+                <i class="fas fa-map-marker-alt"></i>
+                <form method="post" action="traitement.php">                             
+                <input class="recherche-ville" type="search" name="ville" placeholder="Marseille, France"/>
+                <i class="fas fa-search "></i>
+                <span class="texte-bouton bouton-rechercher">Rechercher</span>
+            </bouton>
+
+        </header> 
             
-<!--main-->
-    <main class="main">
-        <nav class="filtres">
-            <h3 class="filtrestitre"> Filtres</h3>
-        <!--bouton filtres-->          
-            <section class = "partie-filtre">
-            <!--economique--> 
-                <bouton class="choixfiltres">  
-                <i class="fas fa-money-bill-wave filtresicones"></i>
-                <span class="texte-bouton">Economique</span>
-                </bouton>
-            <!--familial-->
-                <bouton class="choixfiltres">
-                <i class="fas fa-child filtresicones"></i>
-                <span class="texte-bouton">Familial</span>
-                </bouton>
-            <!--romantique-->  
-                <bouton class="choixfiltres">       
-                <i class="fas fa-heart filtresicones"></i>
-                <span class="texte-bouton">Romantique</span>
-                </bouton>
-            <!--animaux-->
-                 <bouton class="choixfiltres">
-                <i class= "fas fa-dog filtresicones"></i>
-                <span class="texte-bouton">Animaux autorisés</span>
-                </bouton>                    
-            </section>
-        </nav>
-        <!--nombre de logements disponibles--> 
-                <article class="info">
-                    <i class="fas fa-info iconeinfo" ></i>
-                    <h5>Plus de 500 logements sont disponibles dans cette ville </h5>
-                </article>
+        <!--main-->
+        <main class="main">
+            <nav class="filtres">
+                <h2 class="filtres-titre"> Filtres</h2>
+                <!--bouton filtres-->          
+                <section class = "partie-filtre">
+                    <!--economique--> 
+                    <bouton class="choix-filtres">  
+                        <i class="fas fa-money-bill-wave filtres-icones"></i>
+                        <span class="texte-bouton">Economique</span>
+                    </bouton>
+                    <!--familial-->
+                    <bouton class="choix-filtres">
+                        <i class="fas fa-child filtres-icones"></i>
+                        <span class="texte-bouton">Familial</span>
+                    </bouton>
+                    <!--romantique-->  
+                    <bouton class="choix-filtres">       
+                        <i class="fas fa-heart filtres-icones"></i>
+                        <span class="texte-bouton">Romantique</span>
+                    </bouton>
+                    <!--animaux-->
+                    <bouton class="choix-filtres">
+                        <i class= "fas fa-dog filtres-icones"></i>
+                        <span class="texte-bouton">Animaux autorisés</span>
+                    </bouton>                    
+                </section>
+            </nav>
+            <!--nombre de logements disponibles--> 
+            <article class="info">
+                <i class="fas fa-info iconeinfo" ></i>
+                <p class="texte-info">Plus de 500 logements sont disponibles dans cette ville </p>
+            </article>
         
 
-    <!--regroupement aside et hebergement-->    
-        <section class="annonce-centrale">
+            <!--regroupement aside et hebergement-->    
+            <div class="annonce-centrale">
        
-
-
-    <!--aside---les plus populaires-->     
-        <aside class=" aside fond-gris ">
-            <h2 class="titre-populaire">Les plus populaires<i class="fas fa-chart-line"></i></h2>
-            <div class="conteneur-annonce-populaire">
-        <!--1 ere annonce-->           
-                <article class="annonce annonce-horizontale">                        
-                    <a href="#"></a><img class="image-horizontale"
+            <!--aside---les plus populaires-->     
+            <aside class=" aside fond-gris ">
+                <h2 class="titre-populaire">Les plus populaires<i class="fas fa-chart-line"></i></h2>
+                <div class="conteneur-annonce-populaire">
+                    <!--1 ere annonce-->           
+                    <article class="annonce annonce-horizontale">                        
+                        <a class="lien-aside" href="#"></a>
+                        <img class="image-horizontale"
                         src="../maquette projet/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                         alt="image hebergement"/>  
-                    <div class="descriptif-annonce-horizontale">
-                        <div class="hotel-prix">
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <h5>Nuit à partir de <span class="gras">128 <i class="fas fa-euro-sign"></i>
-                            </span></h5>   
-                        </div>   
-                        <div class="etoile">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                    </div>
-                </article>
-        <!-- 2 eme annonce-->
-                <article class="annonce annonce-horizontale">
-                    <a href="#"></a><img class="image-horizontale" 
+                        <div class="descriptif-annonce-horizontale">
+                            <div class="hotel-prix">
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p class="prix-nuit">Nuit à partir de <span class="gras">128 <i class="fas fa-euro-sign"></i>
+                                </span></p>   
+                            </div>   
+                            <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                    </article>
+                    <!-- 2 eme annonce-->
+                    <article class="annonce annonce-horizontale">
+                        <a class="lien-aside" href="#"></a>
+                        <img class="image-horizontale" 
                         src="../maquette projet/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                         alt="image hebergement"/>
-                    <div class="descriptif-annonce-horizontale">
-                        <div class="hotel-prix">
-                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                            <h5>Nuit à partir de <span class="gras">71 <i class="fas fa-euro-sign"></i>
-                            </span></h5>    
-                        </div>                        
-                        <div class="etoile">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star etoile-grise"></i>
-                        </div>
-                    </div>   
-                </article> 
-        <!--3eme annonce-->   
-                <article class="annonce annonce-horizontale">
-                    <a href="#"></a><img class="image-horizontale" 
+                        <div class="descriptif-annonce-horizontale">
+                            <div class="hotel-prix">
+                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                <p class="prix-nuit">Nuit à partir de <span class="gras">71 <i class="fas fa-euro-sign"></i>
+                                </span></p>    
+                            </div>                        
+                            <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star etoile-grise"></i>
+                            </div>
+                        </div>   
+                    </article> 
+                    <!--3eme annonce-->   
+                    <article class="annonce annonce-horizontale">
+                        <a class="lien-aside" href="#"></a>                      
+                        <img class="image-horizontale" 
                         src="../maquette projet/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="image hebergement"/>
-                    <div class="descriptif-annonce-horizontale">
+                        <div class="descriptif-annonce-horizontale">
+                            <div class="hotel-prix">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p class="prix-nuit">Nuit à partir de <span class="gras">68 <i class="fas fa-euro-sign"></i>
+                                </span></p>    
+                            </div>                        
+                            <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star etoile-grise"></i>
+                            </div>
+                        </div>   
+                    </article> 
+                </div>       
+            </aside> 
+
+            <!--hebergement-->                  
+            <section class="hebergements fond-gris">
+                <h2>Hébergements à Marseille</h2> 
+                <div class="conteneur-annonces-hebergement">
+                    <!--1 ere annonce-->
+                    <article class="annonce annonce-verticale "> 
+                        <a class="lien-hebergement" href="#"></a>
+                        <img class="image-verticale"
+                        src="../maquette projet/images/hebergements//1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="image logement"/>
                         <div class="hotel-prix">
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <h5>Nuit à partir de <span class="gras">68 <i class="fas fa-euro-sign"></i>
-                            </span></h5>    
-                        </div>                        
+                            <h3>Auberge la Cannebiére</h3>
+                            <p class="prix-nuit">Nuit à partir de <span class="gras">25 <i class="fas fa-euro-sign"></i>
+                            </span></p>
+                        <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star etoile-grise"></i>                                                   
+                        </div>
+                    </article>
+                    <!--2eme annonce-->   
+                    <article class="annonce annonce-verticale "> 
+                        <a class="lien-hebergement" href="#"></a>                      
+                        <img class="image-verticale" 
+                        src="../maquette projet/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
+                        alt="image logement"/>
+                        <div class="hotel-prix">
+                            <h3>Hôtel du port</h3>
+                            <p class="prix-nuit">Nuit à partir de <span class="gras">52 <i class="fas fa-euro-sign"></i>
+                            </span></p>
+                        </div>
+                        <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </article>
+                    <!--3eme annonce--> 
+                    <article class="annonce annonce-verticale"> 
+                        <a class="lien-hebergement" href="#"></a>
+                        <img class="image-verticale" 
+                        src="../maquette projet/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="image logement"/>
+                        <div class="hotel-prix">
+                            <h3>Hôtel les mouettes</h3>
+                            <p class="prix-nuit">Nuit à partir de <span class="gras">76 <i class="fas fa-euro-sign"></i>
+                            </span></p>
+                        </div>
                         <div class="etoile">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -139,207 +208,156 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star etoile-grise"></i>
                         </div>
-                    </div>   
-                </article> 
-            </div>       
-        </aside> 
-
-    <!--hebergement-->                  
-        <section class="hebergements fond-gris">
-            <h2>Hébergements à Marseille</h2> 
-            <div class="conteneur-annonces-hebergement">
-        <!--1 ere annonce-->
-                <article class="annonce annonce-verticale "> 
-                    <a href="#"></a><img class="image-verticale"
-                        src="../maquette projet/images/hebergements//1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                        alt="image logement"/>
-                    <div class="hotel-prix">
-                        <h3>Auberge la Cannebiére</h3>
-                        <p>Nuit à partir de <strong>25 <i class="fas fa-euro-sign"></i>
-                        </strong></p>
-                    </div>
-                    <div class="etoile">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star etoilegrise"></i>                                                   
-                    </div>
-                </article>
-        <!--2eme annonce-->   
-                <article class="annonce annonce-verticale "> 
-                    <a href="#"></a><img class="image-verticale" 
-                        src="../maquette projet/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
-                        alt="image logement"/>
-                    <div class="hotel-prix">
-                        <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de <strong>52 <i class="fas fa-euro-sign"></i>
-                        </strong></p>
-                    </div>
-                    <div class="etoile">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </article>
-        <!--3eme annonce--> 
-                <article class="annonce annonce-verticale"> 
-                    <a href="#"></a><img class="image-verticale" 
-                        src="../maquette projet/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                        alt="image logement"/>
-                    <div class="hotel-prix">
-                        <h3>Hôtel les mouettes</h3>
-                        <p>Nuit à partir de <strong>76 <i class="fas fa-euro-sign"></i>
-                        </strong></p>
-                    </div>
-                    <div class="etoile">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star etoilegrise"></i>
-                    </div>
-                </article>
-        <!--4eme annonce--> 
-                <article class="annonce annonce-verticale"> 
-                    <a href="#"></a><img class="image-verticale" 
+                    </article>
+                    <!--4eme annonce--> 
+                    <article class="annonce annonce-verticale"> 
+                        <a class="lien-hebergement" href="#"></a>
+                        <img class="image-verticale" 
                         src="../maquette projet/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                         alt="image logement"/>
-                    <div class="hotel-prix">
-                        <h3>Hôtel de la mer</h3>
-                        <p>Nuit à partir de <strong>46 <i class="fas fa-euro-sign"></i>
-                        </strong></p>
-                    </div>
-                    <div class="etoile">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star etoilegrise"></i>
-                        <i class="fas fa-star etoilegrise"></i>
-                    </div>
-                </article>
-        <!--5eme annonce--> 
-                <article class="annonce annonce-verticale"> 
-                    <a href="#"></a><img class="image-verticale" 
+                        <div class="hotel-prix">
+                            <h3>Hôtel de la mer</h3>
+                            <p class="prix-nuit">Nuit à partir de <span class="gras">46 <i class="fas fa-euro-sign"></i>
+                            </span></p>
+                        </div>
+                        <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star etoile-grise"></i>
+                            <i class="fas fa-star etoile-grise"></i>
+                        </div>
+                    </article>
+                    <!--5eme annonce--> 
+                    <article class="annonce annonce-verticale"> 
+                        <a class="lien-hebergement" href="#"></a>
+                        <img class="image-verticale" 
                         src="../maquette projet/images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                         alt="image logement"/>
-                    <div class="hotel-prix">
-                        <h3>Hôtel lee Panier</h3>
-                        <p>Nuit à partir de <strong>23 <i class="fas fa-euro-sign"></i>
-                        </strong></p>
-                    </div>
-                    <div class="etoile">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star etoilegrise"></i>
-                    </div>
-                </article>
-        <!--6eme annonce--> 
-                <article class="annonce annonce-verticale"> 
-                    <a href="#"></a><img class="image-verticale" 
+                        <div class="hotel-prix">
+                            <h3>Hôtel lee Panier</h3>
+                            <p class="prix-nuit">Nuit à partir de <span class="gras">23 <i class="fas fa-euro-sign"></i>
+                            </span></p>
+                        </div>
+                        <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star etoile-grise"></i>
+                        </div>
+                    </article>
+                    <!--6eme annonce--> 
+                    <article class="annonce annonce-verticale"> 
+                        <a class="lien-hebergement" href="#"></a>
+                        <img class="image-verticale" 
                         src="../maquette projet/images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="image logement"/>
-                    <div class="hotel-prix">
-                        <h3>Hôtel chez Amina</h3>
-                        <p>Nuit à partir de <strong>96<i class="fas fa-euro-sign"></i>
-                        </strong></p>
-                    </div>
-                    <div class="etoile">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </article>
-            </div>    
-        <!--AFFICHER PLUS-->  
+                        <div class="hotel-prix">
+                            <h3>Hôtel chez Amina</h3>
+                            <p class="prix-nuit">Nuit à partir de <span class="gras">96<i class="fas fa-euro-sign"></i>
+                            </span></p>
+                        </div>
+                        <div class="etoile">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </article>
+                </div>    
+                <!--AFFICHER PLUS-->  
                 <h3 class="afficher-plus">Afficher plus</h3>
-        </section>
-        </section>
+            </section>
+
+            </div> <!--regroupement aside et hebergement-->
         
-   <!--activités-->     
-        <section class="activites"> 
-            <h2>Activités à Marseille</h2>
-            <div class="conteneur-activites">
-        <!--vieux port-->   
-                <article class="vieux-port annonce annonce-verticale">
-                    <a href="#"></a><img class="image-activite"
+            <!--activités-->     
+            <section class="activites"> 
+                <h2 class="titre-activite">Activités à Marseille</h2>
+                <div class="conteneur-activites">
+                    <!--vieux port-->   
+                    <article class="vieux-port annonce annonce-verticale">
+                        <a class="lien-activites" href="#"></a>
+                        <img class="image-activite"
                         src="../maquette projet/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                         alt="Vieux Port"/>
-                    <h3 class="nomactivite">Vieux Port</h3>      
-                </article>
-         <!--Fort de Pomégues-->        
-                <article class="fort annonce annonce-verticale">
-                    <a href="#"></a><img class="image-activite" 
+                        <h3 class="nomactivite">Vieux Port</h3>      
+                    </article>
+                    <!--Fort de Pomégues-->        
+                    <article class="fort annonce annonce-verticale">
+                        <a class="lien-activites" href="#"></a>
+                        <img class="image-activite" 
                         src="../maquette projet/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                         alt="fort de Pomégues"/>
-                    <h3 class="nomactivite">Fort de Pomégues</h3>      
-                </article>
-        <!--Îles du Frioul--> 
-                <article class=" iles annonce annonce-verticale">
-                    <a href="#"></a><img class="image-activite" 
+                        <h3 class="nomactivite">Fort de Pomégues</h3>      
+                    </article>
+                    <!--Îles du Frioul--> 
+                    <article class=" iles annonce annonce-verticale">
+                        <a class="lien-activites" href="#"></a>
+                        <img class="image-activite" 
                         src="../maquette projet/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                         alt="Îles du Frioul"/>
-                    <h3 class="nomactivite">Îles du Frioul</h3>       
-                </article>
-        <!--Parc National des Calanques-->
-                <article class=" calanques annonce annonce-verticale">
-                    <a href="#"></a><img class="image-activite" 
+                        <h3 class="nomactivite">Îles du Frioul</h3>       
+                    </article>
+                    <!--Parc National des Calanques-->
+                    <article class=" calanques annonce annonce-verticale">
+                        <a class="lien-activites" href="#"></a>
+                        <img class="image-activite" 
                         src="../maquette projet/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                         alt="Parc National des Calanques"/>
-                    <h3 class="nomactivite">Parc National des Calanques</h3>       
-                </article>
-        <!--Notre-Dame-de-la-Garde-->        
-                <article class="notre-dame annonce annonce-verticale">
-                    <a href="#"></a><img class="image-activite"
+                        <h3 class="nomactivite">Parc National des Calanques</h3>       
+                    </article>
+                    <!--Notre-Dame-de-la-Garde-->        
+                    <article class="notre-dame annonce annonce-verticale">
+                        <a class="lien-activites" href="#"></a>
+                        <img class="image-activite"
                         src="../maquette projet/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                         alt="Notre-Dame-de-la-Garde"/>
-                    <h3 class="nomactivite">Notre-Dame-de-la-Garde</h3>       
-                </article> 
-        <!--Parc Longchamp-->       
-                <article class=" parc annonce annonce-verticale">
-                    <a href="#"></a><img class="image-activite"
+                        <h3 class="nomactivite">Notre-Dame-de-la-Garde</h3>       
+                    </article> 
+                    <!--Parc Longchamp-->       
+                    <article class=" parc annonce annonce-verticale">
+                        <a class="lien-activites" href="#"></a>
+                        <img class="image-activite"
                         src="../maquette projet/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                         alt="Parc Longchamp"/>
-                    <h3 class="nomactivite">Parc Longchamp</h3>       
-                </article>
-                
-            </div>        
-        </section>
-    </main>
+                        <h3 class="nomactivite">Parc Longchamp</h3>       
+                    </article>
+                </div>        
+            </section>
+        </main>
 
-    <!--footer-->    
+        <!--footer-->    
         <footer> 
             <div class="conteneur-footer fond-gris" >
-        <!--a propos-->        
-                <h3 class="titre-footer">A propos</h3>
-                <nav class="nav-footer">
-                    <a class="lienfooter"href="#">Fonctionnement du site</a>                   
-                    <a class="lienfooter" href="#">Condition générales de vente</a>
-                    <a class="lienfooter" href="#">Données et confidentialité</a>
-                </nav>
-                
-        <!--nos hebergements-->   
-                <h3 class="titre-footer">Nos hébergements</h3>
-                <nav class="nav-footer">
-                    <a class="lienfooter" href="#">Charte qualité</a>
-                    <a class="lienfooter" href="#">Soumettre votre hôtel</a>
-                </nav>
-                    
-        <!--assistance-->   
-                <h3 class="titre-footer">Assistance</h3>
-                <nav class="nav-footer">
-                    <a class="lienfooter" href="#">Centre d'aide</a>
-                    <a class="lienfooter"href="#">Nous contacter</a>
-                </nav>
-            </div>
-           
+                <!--a propos-->  
+                <div class="categorie-nav">
+                    <h3 class="titre-footer">A propos</h3>
+                    <nav class="nav-footer">
+                        <a class="lien-footer"href="#">Fonctionnement du site</a>                   
+                        <a class="lien-footer" href="#">Condition générales de vente</a>
+                        <a class="lien-footer" href="#">Données et confidentialité</a>
+                    </nav>
+                </div>     
+                <!--nos hebergements-->   
+                <div class="categorie-nav">  
+                    <h3 class="titre-footer">Nos hébergements</h3>
+                    <nav class="nav-footer">
+                        <a class="lien-footer" href="#">Charte qualité</a>
+                        <a class="lien-footer" href="#">Soumettre votre hôtel</a>
+                    </nav>
+                </div>    
+                <!--assistance--> 
+                <div class="categorie-nav">
+                    <h3 class="titre-footer">Assistance</h3>
+                    <nav class="nav-footer">
+                        <a class="lien-footer" href="#">Centre d'aide</a>
+                        <a class="lien-footer"href="#">Nous contacter</a>
+                    </nav>
+                </div>    
+            </div>          
         </footer>
       
-
     </body>
