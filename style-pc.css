@@ -1,14 +1,8 @@
-h1{
-    font-size:0.9em;
-    font-weight: 800;
-    margin-bottom: 10px;    
-    }
+/*--generale---*/
 
-.p{
-    font-size:0.8em;
-    }
- .prix-nuit{
-     font-size:0.7em;     
+h1{
+    font-size:0.8em;    
+    margin-bottom: 10px;    
     }
 
 h2{
@@ -16,8 +10,15 @@ h2{
     font-weight: bolder;
     }
 
+p{
+    font-size:0.7em;
+    font-weight: lighter;
+    }
 
-    
+ .prix-nuit{
+     font-size:0.7em;     
+    }
+
 
 /*-------header-----*/   
 header{margin-top: 40px;}
@@ -28,7 +29,7 @@ header{margin-top: 40px;}
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px;
-   }
+    }
 
 .navigation{
     display:inline;
@@ -65,29 +66,30 @@ header{margin-top: 40px;}
     }   
   
 .bouton-rechercher{
-        display: inline-flex;              
-        height : 100%;             
-        background-color:#0065FC;
-        border-radius:0px 12px 12px 0px;  
-        }   
+    display: inline-flex;              
+    height : 100%;             
+    background-color:#0065FC;
+    border-radius:0px 12px 12px 0px;  
+    }   
 
 .bouton-primaire .texte-bouton{
     color:white;
     font-size:0.7em;
-    padding:12px;
+    padding:14px;
     }
     
 .fa-map-marker-alt{
     font-size:0.9em;
     background-color:#F2F2F2;
-    padding: 12px;    
+    padding:14px;    
     }
 
 .recherche-ville{
     display:inline;
+    text-align:left;
     font-size: 0.7em;  
-    width:45%;
-    margin:10px;
+    width:50%;
+    margin:8px;
     }   
 
 /*---filtres---*/
@@ -108,7 +110,7 @@ header{margin-top: 40px;}
 
 .partie-filtre .texte-bouton{
     font-size:0.9em;
-    padding:0px 8px;
+    padding:0px 10px;
     }
     
 .filtres-icones{
@@ -124,17 +126,18 @@ header{margin-top: 40px;}
 .texte-info{
     font-size: 0.7em;
     }
-
+.info{margin-top:5px;}
   
 /*aside*/
 .titre-populaire{
     padding:15px 30px 20px 30px;
-
-}
+    font-weight: 900;
+    }
 
 .aside{
     width:30%;
-}
+    }
+
 .conteneur-annonce-populaire{
     display:flex;
     flex-direction: column;
@@ -143,7 +146,6 @@ header{margin-top: 40px;}
     margin: 0px;   
     padding:0px 35px;
     }
-
 
 .annonce-horizontale{
     display: flex;
@@ -155,21 +157,24 @@ header{margin-top: 40px;}
     margin:10px 0px ;  
     } 
 
-
 .annonce-centrale{
     display:flex;
     flex-direction: row-reverse;   
     justify-content: space-between; 
-    margin:25px 0px;
-    
-    
+    margin:25px 0px;       
     }
-         
+
+.image-horizontale{            
+        border-radius: 10px 0px 0px 10px;                     
+        }         
         
-
 /*-----hebergements------*/
-
 h3{font-size:0.8em;}
+
+.titre-hebergement{
+    padding-left: 40px;
+    font-weight: 900;
+    }
 
 .hebergements{
     width: 67%;
@@ -191,27 +196,22 @@ h3{font-size:0.8em;}
 .annonce-verticale{
     Height:8em;
     width:27%;          
-    margin:15px;    
+    margin:15px;
     } 
 
 .hotel-prix{width: auto;}    
 
-.afficher-plus{padding:15px;}
-
-
-
+.afficher-plus{padding: 25px 40px;}
 
 /*------activités----*/
-
 .titre-activite{
     padding:15px 30px 20px 0px;
-}
+    }
 
 .activites{
     padding:20px 0px;
     height:40%;    
     }
-
 
 .conteneur-activites{
     display:grid;
@@ -224,8 +224,10 @@ h3{font-size:0.8em;}
     padding:0px 0px 15px 0px;        
     }
 
+.image-activite{    
+    border-radius: 10px 10px 0px 0px;    
+    }
     
-
 .vieux-port{
     height:100%;
     width:100%;
@@ -249,7 +251,7 @@ h3{font-size:0.8em;}
     grid-column:2/3;
     grid-row:4/5;
     margin:0px;  
-}
+    }
 
 .calanques{
     height:100%;
@@ -273,19 +275,16 @@ h3{font-size:0.8em;}
     grid-column:4/5;
     grid-row:3/5;
     margin:0px;  
-       
     }
 
-
-
+/*footer*/
 .conteneur-footer{
     display:flex;
     flex-direction: row;
     justify-content:flex-start ;
     padding:30px 0px;
     margin-bottom: 25px;
-    
-}
+    }
 
 .categorie-nav{
     display:flex;
@@ -294,22 +293,20 @@ h3{font-size:0.8em;}
     align-items: center;
     margin:0px 20px;
     padding:0px 120px 0px 0px;
-   
-}
+   }
 
 .h3{
     margin-bottom:10px;
+    }
 
-}
 .nav-footer{
     justify-content: flex-start;
-}
+    }
 
 .lien-footer{
-    font-size:0.9em;
+    font-size:0.8em;
     padding:2px;
-
-}
+    }
 
 
 

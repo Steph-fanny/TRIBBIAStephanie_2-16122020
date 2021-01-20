@@ -3,9 +3,12 @@
         <meta charset="UTF-8"/>
     
         <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" media="screen and (min-width:576px) and (max-width: 767px)" href="style-mobile.css"/>       
+        <link rel="stylesheet" media="screen and (max-width: 767px)" href="style-mobile.css"/>       
+        <link rel="stylesheet" media="screen and (min-width:768px) and (max-width: 991px)" href="style-tablette.css"/>
+        <link rel="stylesheet" media="screen and (min-width: 992px)and (max-width: 1200px) " href="style-pc.css"/>
         
-        <link rel="stylesheet" media="screen and (min-width: 768px) " href="style-pc.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <title>projet2</title>
         <meta name="description" content =" Reservia trouver votre hébergement pour des vacances de rêve">
@@ -80,7 +83,7 @@
             <!--regroupement aside et hebergement-->    
             <div class="annonce-centrale">
        
-            <!--aside---les plus populaires-->     
+            <!-- aside les plus populaires-->     
             <aside class=" aside fond-gris ">
                 <h2 class="titre-populaire">Les plus populaires<i class="fas fa-chart-line"></i></h2>
                 <div class="conteneur-annonce-populaire">
@@ -151,13 +154,13 @@
 
             <!--hebergement-->                  
             <section class="hebergements fond-gris">
-                <h2>Hébergements à Marseille</h2> 
+                <h2 class="titre-hebergement">Hébergements à Marseille</h2> 
                 <div class="conteneur-annonces-hebergement">
                     <!--1 ere annonce-->
                     <article class="annonce annonce-verticale "> 
                         <a class="lien-hebergement" href="#"></a>
                         <img class="image-verticale"
-                        src="../maquette projet/images/hebergements//1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        src="../maquette projet/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                         alt="image logement"/>
                         <div class="hotel-prix">
                             <h3>Auberge la Cannebiére</h3>
@@ -175,7 +178,7 @@
                     <article class="annonce annonce-verticale "> 
                         <a class="lien-hebergement" href="#"></a>                      
                         <img class="image-verticale" 
-                        src="../maquette projet/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
+                        src="../maquette projet/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
                         alt="image logement"/>
                         <div class="hotel-prix">
                             <h3>Hôtel du port</h3>
@@ -194,7 +197,7 @@
                     <article class="annonce annonce-verticale"> 
                         <a class="lien-hebergement" href="#"></a>
                         <img class="image-verticale" 
-                        src="../maquette projet/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        src="../maquette projet/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                         alt="image logement"/>
                         <div class="hotel-prix">
                             <h3>Hôtel les mouettes</h3>
@@ -213,7 +216,7 @@
                     <article class="annonce annonce-verticale"> 
                         <a class="lien-hebergement" href="#"></a>
                         <img class="image-verticale" 
-                        src="../maquette projet/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        src="../maquette projet/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                         alt="image logement"/>
                         <div class="hotel-prix">
                             <h3>Hôtel de la mer</h3>
@@ -232,7 +235,7 @@
                     <article class="annonce annonce-verticale"> 
                         <a class="lien-hebergement" href="#"></a>
                         <img class="image-verticale" 
-                        src="../maquette projet/images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        src="../maquette projet/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                         alt="image logement"/>
                         <div class="hotel-prix">
                             <h3>Hôtel lee Panier</h3>
@@ -251,7 +254,7 @@
                     <article class="annonce annonce-verticale"> 
                         <a class="lien-hebergement" href="#"></a>
                         <img class="image-verticale" 
-                        src="../maquette projet/images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                        src="../maquette projet/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="image logement"/>
                         <div class="hotel-prix">
                             <h3>Hôtel chez Amina</h3>
@@ -281,7 +284,7 @@
                     <article class="vieux-port annonce annonce-verticale">
                         <a class="lien-activites" href="#"></a>
                         <img class="image-activite"
-                        src="../maquette projet/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        src="../maquette projet/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                         alt="Vieux Port"/>
                         <h3 class="nomactivite">Vieux Port</h3>      
                     </article>
@@ -289,7 +292,7 @@
                     <article class="fort annonce annonce-verticale">
                         <a class="lien-activites" href="#"></a>
                         <img class="image-activite" 
-                        src="../maquette projet/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        src="../maquette projet/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                         alt="fort de Pomégues"/>
                         <h3 class="nomactivite">Fort de Pomégues</h3>      
                     </article>
@@ -297,7 +300,7 @@
                     <article class=" iles annonce annonce-verticale">
                         <a class="lien-activites" href="#"></a>
                         <img class="image-activite" 
-                        src="../maquette projet/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                        src="../maquette projet/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                         alt="Îles du Frioul"/>
                         <h3 class="nomactivite">Îles du Frioul</h3>       
                     </article>
@@ -305,7 +308,7 @@
                     <article class=" calanques annonce annonce-verticale">
                         <a class="lien-activites" href="#"></a>
                         <img class="image-activite" 
-                        src="../maquette projet/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        src="../maquette projet/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                         alt="Parc National des Calanques"/>
                         <h3 class="nomactivite">Parc National des Calanques</h3>       
                     </article>
@@ -313,7 +316,7 @@
                     <article class="notre-dame annonce annonce-verticale">
                         <a class="lien-activites" href="#"></a>
                         <img class="image-activite"
-                        src="../maquette projet/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                        src="../maquette projet/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                         alt="Notre-Dame-de-la-Garde"/>
                         <h3 class="nomactivite">Notre-Dame-de-la-Garde</h3>       
                     </article> 
@@ -321,7 +324,7 @@
                     <article class=" parc annonce annonce-verticale">
                         <a class="lien-activites" href="#"></a>
                         <img class="image-activite"
-                        src="../maquette projet/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                        src="../maquette projet/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                         alt="Parc Longchamp"/>
                         <h3 class="nomactivite">Parc Longchamp</h3>       
                     </article>
@@ -336,7 +339,7 @@
                 <div class="categorie-nav">
                     <h3 class="titre-footer">A propos</h3>
                     <nav class="nav-footer">
-                        <a class="lien-footer"href="#">Fonctionnement du site</a>                   
+                        <a class="lien-footer" href="#">Fonctionnement du site</a>                   
                         <a class="lien-footer" href="#">Condition générales de vente</a>
                         <a class="lien-footer" href="#">Données et confidentialité</a>
                     </nav>
@@ -354,7 +357,7 @@
                     <h3 class="titre-footer">Assistance</h3>
                     <nav class="nav-footer">
                         <a class="lien-footer" href="#">Centre d'aide</a>
-                        <a class="lien-footer"href="#">Nous contacter</a>
+                        <a class="lien-footer" href="#">Nous contacter</a>
                     </nav>
                 </div>    
             </div>          

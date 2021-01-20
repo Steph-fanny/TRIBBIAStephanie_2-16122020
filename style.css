@@ -1,35 +1,30 @@
 /*--------sommaire-------
-1. Fonts
-2. general :
+
+1.general :
     - body
-    - h1 h2 h3 h5
-    - p
-    - fa-star, etoile grise, etoile
-    - fond gris
-    - img
-    - gras
-    - a
-    -commun annonce
+    - h1 h2 h3 
+    - <a>,<p> 
+    - etoile , etoile grise fa-star
+    - fond gris, img gras
+    - liens hover: nav-lien,footer
+    - annonce, prix nuit
+2.header 
+3.navigation
+4.zone rechercher
+5.filtres
+6.bouton rechercher version pc
+7.info
+8.hebergement
+9.aside
+10.activites
+11.footer
 
+    
 
-
-
-
-/*police*/
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('fonts/raleway-regular-webfont.eot');
-    src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),       
-         url('fonts/raleway-regular-webfont.woff') format('woff'),
-         url('fonts/raleway-regular-webfont.ttf') format('truetype'),
-         url('fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    }
 
 /*generale*/
 body{
-    font-family:'ralewayregular';
+    font-family: 'Raleway', sans-serif;
     color:black; 
     width: 100%;     
     margin:0px;
@@ -55,14 +50,11 @@ h3{
     font-weight: bold;    
     margin: 5px 0px;  
     }
- 
-.prix-nuit{
-    font-size: 0.9em;
-    font-weight: normal;
-    width: 100%;
-    margin: 0px 10px 0px 0px;    
-    }
 
+a{
+    text-decoration: none;
+    color:black;
+    }
 
 P{
     text-align:left;
@@ -71,66 +63,71 @@ P{
     margin:0px;    
     }
 
+.etoile{
+    display:flex;
+    flex-direction: row;
+    margin:5px 0px 5px 0px;
+    }
+
+.etoile-grise{
+    color:rgb(189, 186, 186);
+    }
+
 .fa-star { 
     color: #0065FC; 
     font-size: 0.7em;   
     }
 
 
-.etoile-grise{
-    color:#C5C2C2;
-    }
-
-.etoile{
-        display:flex;
-        flex-direction: row;
-        margin:5px 0px 5px 0px;
-        }
-
 .fond-gris{
-    background-color:#cccccc;
+    background-color:#f2f2f2;
     border-radius: 15px;
     }
 
 img {
-        max-width: 100%;  
-        max-height: 100%;   
-        }
+    max-width: 100%;  
+    max-height: 100%;   
+    }
 
 .gras{
     font-weight:bold;
     }
 
-a{
-    text-decoration: none;
-    color:black;
+.nav-lien:hover{
+    border-bottom: solid 3px #0065FC ;         
+    color:#0065FC;        
     }
+.choix-filtres:hover{  
+    transform:scale(1.2);
+    }
+.texte-bouton:hover{
+    color:#0065FC;
+}
 
+.lien-footer:hover{
+    color:#0065FC;
+    cursor:pointer;   
+    }  
     
 .annonce{
         display: flex;
         border: white solid 4px;    
-        box-shadow: silver 3px 3px 0px 0px;
+        box-shadow:#f2f2f2 3px 3px 0px 0px;
         border-radius:10px; 
         } 
-        
+       
+.prix-nuit{
+            font-size: 0.9em;
+            font-weight: normal;
+            width: 100%;
+            margin: 0px 10px 0px 0px;    
+            }  
+
 header,main, footer{
     padding: 0px 10px 0px 10px;
     }
-/*.aside,.hebergements,.activites, .conteneur-footer{
-    padding:0px 15px;    
-    }*/
-          
-    
- .lien-footer:hover{
-    color:blue;
-    cursor:pointer;   
-    }
+     
 
- .nav-lien:hover{
-        border-bottom: solid 3px blue ;         
-        color:blue;        
-        }
  /*.annonce-horizontale .lien-aside ,.annonce-verticale .lien-activites, .annonce-verticale .lien-hebergement{
     display:block;    
     width: 100%;
@@ -172,22 +169,12 @@ header,main, footer{
     font-size: 0.9em;    
     width: 50%;         
     color:black;     
-    border-bottom: solid 3px grey ;    
+    border-bottom: solid 3px #f2f2f2 ;    
     margin: 10px 0px 15px 0px; 
     padding:10px;
     }    
     
 /*----zone rechercher----*/
-/*.nav-rechercher{
-    display : flex;
-    flex-direction: row;
-    justify-content: flex-start;     
-    align-items: center;
-    max-width:100%; 
-    border:solid #e2e1e1 1px;
-    border-radius : 10px;
-    margin:20px 0px;        
-    }*/
 .bouton-primaire{
     display:flex;
     flex-direction: row;
@@ -197,14 +184,15 @@ header,main, footer{
     border-radius: 12px;
     border:solid #f2f2f2 1px;    
     margin:20px 0px; 
-}
+    }
+
 .fa-map-marker-alt{
     display:flex!important;
     justify-content: center;
     height:100%;
     width: 20px; 
     color:black;     
-    background-color:grey;
+    background-color:#f2f2f2;
     border-radius:12px 0px 0px 12px;    
     padding:8px;    
     }
@@ -227,7 +215,7 @@ header,main, footer{
     padding:4px;       
     }
   
-/* filtres*/
+/* ---filtres---*/
 .filtres-titre{
     margin:20px 0px 5px 0px;
     font-size:1em;
@@ -260,10 +248,10 @@ header,main, footer{
     height : 35px;
     width: 35px;
     color:#0065FC;    
-    background-color:#ccd8e9;
+    background-color:#DEEBFF;
     border-radius: 15px;  
     }
-
+/*--- bouton rechercher version pc---*/
 .texte-bouton{
     padding:0px 10px ;
     background-color:white;
@@ -272,8 +260,9 @@ header,main, footer{
 
 .bouton-rechercher{
     display:none;
-}
-/* info*/
+    }
+
+/*--- info---*/
 .info{
     display : flex!important;
     flex-direction: row ;
@@ -286,7 +275,7 @@ header,main, footer{
 
 .iconeinfo{
     display: flex!important;
-    color:blue;
+    color:#0065FC;
     justify-content:center;
     align-items: center;
     height : 8px;
@@ -299,27 +288,24 @@ header,main, footer{
     }    
 
 .texte-info{
-        font-size: 0.9em;
-        font-weight: normal;
-        width: 100%;
-        margin: 0px 10px 0px 0px;    
-        }
+    font-size: 0.9em;
+    font-weight: normal;
+    width: 100%;
+    margin: 0px 10px 0px 0px;    
+    }
 
-/*hebergement*/
-
+/*---hebergement---*/
 .hebergements{
-    margin:10px 0px;  
-     
-     
+    margin:10px 0px;    
     }
  
 .conteneur-annonces-hebergement{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;             
-        padding:0px 15px;
-        }
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;             
+    padding:0px 15px;
+    }
 
 .annonce-verticale{
     display:flex;      
@@ -329,7 +315,7 @@ header,main, footer{
     Height:10em;
     width:100%;          
     margin:10px 0px;    
-        } 
+    } 
     
 .image-verticale{
     display:flex;
@@ -344,16 +330,14 @@ header,main, footer{
     flex-direction: column;
     justify-content: space-evenly;
     }
-
    
-/*aside*/
-
+/*---aside---*/
 .lien-aside{
     display:block;    
     width: 100%;
     position:absolute;
     z-index:2;
-}
+    }
 
 .conteneur-annonce-populaire{
     display:flex;
@@ -380,8 +364,6 @@ header,main, footer{
     width: 100%; 
     border-radius: 10px 10px; 
     margin:10px 0px ;  
- 
-     
     }
 
 .image-horizontale{
@@ -409,8 +391,7 @@ header,main, footer{
     padding:0px 0px 10px 0px;
     }   
 
-/*------activité-------*/
-
+/*---activité----*/
 .conteneur-activites{
     display:flex;
     flex-direction: column;
@@ -432,16 +413,14 @@ header,main, footer{
     margin:10px;
     }
 
-
-/*footer*/
-
+/*---footer---*/
 .titre-footer{
     display:flex;
     justify-content: flex-start;
     width:100%;
     margin:15px 0px 8px 0px;
     font-weight: bolder;
-}
+    }
 
 .conteneur-footer{
     display:flex !important;
