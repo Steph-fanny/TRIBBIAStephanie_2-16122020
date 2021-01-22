@@ -126,8 +126,7 @@ header,main, footer{
     padding: 0px 10px 0px 10px;
     }
      
-
- .lien-aside ,.lien-activites, .lien-hebergement{
+.lien-aside ,.lien-activites, .lien-hebergement{
     display:block;    
     width: 100%;
     height:100%;
@@ -137,7 +136,7 @@ header,main, footer{
 article{
     position:relative;
     z-index:1;
-}
+    }
 
 /*----header----*/
 .header{
@@ -237,6 +236,7 @@ article{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;  
+    background-color: white;
     border: solid #c5c2c2 1px;    
     border-radius: 15px;      
     padding: 0px 15px 0px 0px;
@@ -255,8 +255,7 @@ article{
     }
 /*--- bouton rechercher version pc---*/
 .texte-bouton{
-    padding:0px 10px ;
-    background-color:white;
+    padding:0px 10px ;   
     font-weight : bold;
     }
 
@@ -298,7 +297,8 @@ article{
 
 /*---hebergement---*/
 .hebergements{
-    margin:10px 0px;    
+    margin:10px 0px; 
+    background-color: white;   
     }
  
 .conteneur-annonces-hebergement{
@@ -390,8 +390,9 @@ article{
     justify-content: flex-start;
     }    
 .afficher-plus{
-    padding:0px 0px 10px 0px;
-    }   
+    padding:0px 0px 10px 0px;    
+    }
+    
 
 /*---activité----*/
 .conteneur-activites{
