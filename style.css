@@ -146,16 +146,18 @@ article{
     } 
 
 .logo{
-    float:inline-start;
-    margin:10px 0px 5px 0px;
+    position:absolute;
+    float:left;
+    margin:10px 0px 15px 0px;
     }
     
 .inscription{
-        float:inline-end;
-        color:#0065FC;
-        font-weight:bolder;
-        margin:20px 0px;
-        }
+    position:relative;
+    float: right;
+    color:#0065FC;
+    font-weight:bolder;
+    margin:10px 0px 15px 0px;
+    }
     
 /*--navigation--*/
 .navigation{
@@ -257,6 +259,7 @@ article{
 .texte-bouton{
     padding:0px 10px ;   
     font-weight : bold;
+    border:none;
     }
 
 .bouton-rechercher{
@@ -267,7 +270,7 @@ article{
 .info{
     display : flex!important;
     flex-direction: row ;
-    justify-content: justify;
+    justify-content: center;
     align-items: center;
     width:100%;
     padding : 0px 5px 0px 0px;

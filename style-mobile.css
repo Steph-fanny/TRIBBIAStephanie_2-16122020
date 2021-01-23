@@ -259,14 +259,14 @@ header,main, footer{
     }
 
 .bouton-rechercher{
-    display:none;
+    display:none;    
     }
 
 /*--- info---*/
 .info{
     display : flex!important;
     flex-direction: row ;
-    justify-content: justify;
+    justify-content: center;
     align-items: center;
     width:100%;
     padding : 0px 5px 0px 0px;
