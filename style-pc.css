@@ -1,5 +1,3 @@
-/*--generale---*/
-
 h1{
     font-size:0.8em;    
     margin: 10px 0px;    
@@ -21,8 +19,7 @@ p{
 
 .logo{
     position:absolute;        
-    top:25px;
-    margin-bottom: 5px;
+    top:30px;   
     }
 
 /*-------header-----*/   
@@ -63,7 +60,8 @@ header{margin-top: 40px;}
 /*----rechercher----*/
 .bouton-primaire{
     justify-content: left;
-    width:35%;    
+    width:35%;  
+    border:none;  
     }
 
 .bouton-primaire .fa-search{
@@ -138,6 +136,9 @@ header{margin-top: 40px;}
 .titre-populaire{
     padding:15px 30px 20px 30px;
     font-weight: 900;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
     }
 
 .aside{
@@ -154,15 +155,15 @@ header{margin-top: 40px;}
     }
 
 .annonce-horizontale{
-    display: flex;
-    flex-direction: row;        
-    background-color: white;
-    height:6em; 
-    width: 100%; 
-    border-radius: 10px 10px; 
-    margin:10px 0px ;  
+    height:6em;     
     } 
 
+.descriptif-annonce-horizontale{
+    padding:0px 0px 0px 10px;
+    width: 50%; 
+    height:40%;
+    }
+         
 .annonce-centrale{
     display:flex;
     flex-direction: row-reverse;   
@@ -172,8 +173,8 @@ header{margin-top: 40px;}
 
 .image-horizontale{            
         border-radius: 10px 0px 0px 10px;                     
-        }         
-        
+        }    
+           
 /*-----hebergements------*/
 h3{font-size:0.8em;}
 
@@ -182,10 +183,11 @@ h3{font-size:0.8em;}
     font-weight: 900;
     }
 
-.hebergements{
+#hebergements{
     width: 67%;
     margin:0px 25px 0px 0px;
     background-color: #f2f2f2;
+    border-radius: 15px;
     }
 
 .conteneur-annonces-hebergement{
@@ -204,7 +206,7 @@ h3{font-size:0.8em;}
     Height:8em;
     width:27%;          
     margin:15px;
-    } 
+    }     
 
 .hotel-prix{width: auto;}    
 
@@ -215,11 +217,10 @@ h3{font-size:0.8em;}
     padding:15px 30px 20px 0px;
     }
 
-.activites{
+#activites{
     padding:20px 0px;
     height:40%;    
     }
-
 .conteneur-activites{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -230,11 +231,11 @@ h3{font-size:0.8em;}
     margin:0px;
     padding:0px 0px 15px 0px;        
     }
-
+    
 .image-activite{    
     border-radius: 10px 10px 0px 0px;    
     }
-    
+        
 .vieux-port{
     height:100%;
     width:100%;
@@ -243,7 +244,7 @@ h3{font-size:0.8em;}
     padding:0px;
     margin:0px;  
     }
-
+    
 .fort{
     height:100%;
     width:100%;
@@ -251,7 +252,7 @@ h3{font-size:0.8em;}
     grid-row:1/3;
     margin:0px;  
     }
-
+    
 .iles{
     height:100%;
     width:100%;
@@ -259,7 +260,7 @@ h3{font-size:0.8em;}
     grid-row:4/5;
     margin:0px;  
     }
-
+    
 .calanques{
     height:100%;
     width:100%;
@@ -267,7 +268,7 @@ h3{font-size:0.8em;}
     grid-row:1/5;
     margin:0px;  
     }
-
+    
 .notre-dame{
     height:100%;
     width:100%;
@@ -275,7 +276,7 @@ h3{font-size:0.8em;}
     grid-row:1/2;
     margin:0px;  
     }
-    
+        
 .parc{
     height:100%;
     width:100%;    
@@ -296,24 +297,24 @@ h3{font-size:0.8em;}
 .categorie-nav{
     display:flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     margin:0px 20px;
     padding:0px 120px 0px 0px;
-   }
+    }
+       
+.nav-footer{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;    
+    }
 
 .h3{
     margin-bottom:10px;
-    }
-
-.nav-footer{
-    justify-content: flex-start;
     }
 
 .lien-footer{
     font-size:0.8em;
     padding:2px;
     }
-
-
 
