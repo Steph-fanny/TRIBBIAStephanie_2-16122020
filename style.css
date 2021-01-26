@@ -5,6 +5,413 @@
     - h1 h2 h3 
     - <a>,<p> 
     - etoile , etoile grise fa-star
+    - fond gris, img, gras
+    - liens hover: nav-lien,footer
+    - annonce, prix nuit
+2.header 
+3.navigation
+4.zone rechercher
+5.filtres
+6.bouton rechercher version pc
+7.info
+8.hebergement
+9.aside
+10.activites
+
+
+   
+/*---generale---*/
+body{
+    font-family: 'Raleway', sans-serif;
+    color:black; 
+    width: 100%;     
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;      
+    }
+
+h1{
+    text-align:left;
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin:15px 0px;
+    }
+
+h2{     
+    text-align:left;           
+    }    
+
+h3{
+    font-size: 1em;
+    font-weight: bold;    
+    margin: 5px 0px;  
+    }
+
+a{
+    text-decoration: none;
+    color:black;
+    }
+
+P{
+    text-align:left;
+    width: 100%;
+    font-size: 0.9em;  
+    margin:0px;    
+    }
+
+.etoile{
+    display:flex;
+    flex-direction: row;
+    margin:5px 0px 5px 0px;
+    }
+
+
+.fa-star { 
+    color: #0065FC; 
+    font-size: 0.7em;   
+    }
+
+.etoile-grise{
+    color:rgb(189, 186, 186);
+    }
+
+.fond-gris{
+    background-color:#f2f2f2;
+    border-radius: 15px;
+    }
+
+/*img {
+    max-width: 100%;  
+    max-height: 100%;   
+    }*/
+
+.gras{
+    font-weight:bold;
+    }
+
+.nav-lien:hover{
+    border-bottom: solid 3px #0065FC ;         
+    color:#0065FC;        
+    }
+.choix-filtres:hover{  
+    transform:scale(1.2);
+    }
+.texte-bouton:hover{
+    color:#0065FC;
+    cursor:pointer;  
+}
+
+.lien-footer:hover{
+    color:#0065FC;
+    cursor:pointer; 
+    }  
+    
+.annonce{
+        display: flex;
+        border: white solid 4px;    
+        box-shadow:#f2f2f2 3px 3px 0px 0px;
+        border-radius:10px; 
+        } 
+       
+.prix-nuit{
+            font-size: 0.9em;
+            font-weight: normal;
+            width: 100%;
+            margin: 0px 10px 0px 0px;    
+            }  
+
+header,main, footer{ 
+    padding: 10px;
+    margin:auto;
+    }
+     
+.lien-aside ,.lien-activites, .lien-hebergement{
+    display:block;    
+    width: 100%;
+    height:100%;
+    position:absolute;
+    z-index:2;
+    }
+  
+
+article{
+    position:relative;
+    z-index:1;
+    }
+
+/*----header----*/
+.header{
+    display:block;
+    font-size:1.2em;
+    font-weight:500;
+    } 
+
+.logo{
+    position:absolute;
+    float:left;
+    margin:10px 0px 15px 0px;
+    }
+    
+.inscription{
+    position:relative;
+    float: right;
+    color:#0065FC;
+    font-weight:bolder;
+    margin:10px 0px 15px 0px;
+    }
+    
+/*--navigation--*/
+.navigation{
+    display : flex;     
+    justify-content: space-around;  
+    width: 100%; 
+    padding:0px;   
+    }
+
+.nav-lien{
+    text-align: center; 
+    font-size: 0.9em;    
+    width: 50%;         
+    color:black;     
+    border-bottom: solid 3px #f2f2f2 ;    
+    margin: 10px 0px 15px 0px; 
+    padding:10px;
+    }    
+    
+/*----zone rechercher----*/
+.bouton-primaire{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    Max-width:76%;       
+    margin:20px 0px; 
+    }
+
+.fa-map-marker-alt{
+    display:flex!important;
+    justify-content: center;
+    height:100%;
+    width: 20px; 
+    color:black;     
+    background-color:#f2f2f2;
+    border-radius:12px 0px 0px 12px;    
+    padding:8px;    
+    }
+
+.fa-search{
+    display: inline;        
+    color:white;    
+    background-color:#0065FC ;    
+    border-radius: 12px;          
+    padding:8px;
+    }
+
+.recherche-ville{
+    text-align:center;
+    font-size:1em;
+    color:black;
+    font-weight: bolder;
+    border:none;    
+    padding:4px;       
+    }
+  
+/* ---filtres---*/
+.filtres-titre{
+    margin:20px 0px 5px 0px;
+    font-size:1em;
+    }
+.partie-filtre{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    font-weight: bold;
+    width: 100%;
+    padding:20px 0px 15px 0px;    
+    }
+
+.choix-filtres{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+    background-color: white;
+    border: solid #c5c2c2 1px;    
+    border-radius: 15px;      
+    padding: 0px 15px 0px 0px;
+    margin:3px 12px 5px 0px;
+    }
+
+.filtres-icones{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    height : 35px;
+    width: 35px;
+    color:#0065FC;    
+    background-color:#DEEBFF;
+    border-radius: 15px;  
+    }
+/*--- bouton rechercher version pc---*/
+.texte-bouton{
+    padding:0px 10px ;   
+    font-weight : bold;
+    background-color: white;
+    border:none;
+    }
+
+.bouton-rechercher{
+    display:none;
+    }
+
+/*--- info---*/
+.info{
+    display : flex!important;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    width:100%;  
+    margin-bottom: 15px;       
+    }  
+
+.iconeinfo{
+    display: flex!important;
+    color:#0065FC;
+    justify-content:center;
+    align-items: center;
+    height : 8px;
+    width: 8px;  
+    font-size : 11px;
+    border: solid 1px #C5C2C2;
+    border-radius:10px;   
+    padding: 6px;
+    margin:8px 10px 8px 0px;
+    }    
+
+.texte-info{
+    font-size: 0.9em;
+    font-weight: normal;
+    width: 100%;        
+    }
+
+
+/*---hebergement---*/
+#hebergements{
+    margin:10px 0px; 
+    background-color: white;   
+    }
+ 
+.conteneur-annonces-hebergement{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;             
+    padding:0px 15px;
+    }
+
+.annonce-verticale{
+    display:flex;      
+    flex-direction: column;  
+    justify-content: space-around;  
+    background-color:white ;
+    Height:10em;
+    width:100%;          
+    margin:10px 0px 20px 0px;    
+    } 
+    
+.image-verticale{
+    display:flex;
+    width: 100%;
+    max-height:60%;
+    border-radius: 10px 10px 0px 0px; 
+    object-fit: cover;
+    }
+
+.descriptif-annonce-verticale{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+.afficher-plus{
+    font-size:0.9em;
+    font-weight:bold; 
+    }
+    
+/*---aside---*/
+.aside{
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    }
+.titre-populaire{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 15px 15px 0px 15px;
+    }
+.lien-aside{
+    display:block;    
+    width: 100%;
+    position:absolute;
+    z-index:2;
+    }
+
+.conteneur-annonce-populaire{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;   
+    padding:0px 15px;
+    }
+.annonce-horizontale{
+    display: flex;
+    flex-direction: row;        
+    background-color: white;
+    height:7em; 
+    width: 100%; 
+    border-radius: 10px 10px; 
+    margin:10px 0px ;  
+    }
+
+.image-horizontale{
+    display: inline-block;    
+    width: 40%;   
+    height: 100%;    
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;               
+    }
+.hotel-prix{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    } 
+ 
+/*---activité----*/
+.image-activite{    
+    width: 100%;
+    height:100%;
+    border-radius: 10px 0px 0px 10px;    
+    overflow: hidden;
+    object-fit: cover;
+    }
+
+.nomactivite{
+    margin:10px;
+    }
+
+.titre-activite{
+    padding:15px 30px 20px 0px;
+    }
+
+/*--------sommaire-------
+
+1.general :
+    - body
+    - h1 h2 h3 
+    - <a>,<p> 
+    - etoile , etoile grise fa-star
     - fond gris, img gras
     - liens hover: nav-lien,footer
     - annonce, prix nuit
@@ -445,10 +852,3 @@ article{
     width:100%;
     Padding:0px;
     }
-
-
-
-
-
-
-
