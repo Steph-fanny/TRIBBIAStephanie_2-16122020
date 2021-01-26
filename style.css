@@ -5,7 +5,7 @@
     - h1 h2 h3 
     - <a>,<p> 
     - etoile , etoile grise fa-star
-    - fond gris, img gras
+    - fond gris, img, gras
     - liens hover: nav-lien,footer
     - annonce, prix nuit
 2.header 
@@ -17,7 +17,7 @@
 8.hebergement
 9.aside
 10.activites
-11.footer
+
 
    
 /*---generale---*/
@@ -38,10 +38,8 @@ h1{
     }
 
 h2{     
-    text-align:left; 
-    padding:15px ;
-    margin:0px;    
-    }
+    text-align:left;           
+    }    
 
 h3{
     font-size: 1em;
@@ -82,10 +80,10 @@ P{
     border-radius: 15px;
     }
 
-img {
+/*img {
     max-width: 100%;  
     max-height: 100%;   
-    }
+    }*/
 
 .gras{
     font-weight:bold;
@@ -122,8 +120,9 @@ img {
             margin: 0px 10px 0px 0px;    
             }  
 
-header,main, footer{
-    padding: 0px 10px 0px 10px;
+header,main, footer{ 
+    padding: 10px;
+    margin:auto;
     }
      
 .lien-aside ,.lien-activites, .lien-hebergement{
@@ -133,6 +132,8 @@ header,main, footer{
     position:absolute;
     z-index:2;
     }
+  
+
 article{
     position:relative;
     z-index:1;
@@ -183,9 +184,7 @@ article{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    max-width:100%;
-    border-radius: 12px;
-    border:solid #f2f2f2 1px;    
+    Max-width:76%;       
     margin:20px 0px; 
     }
 
@@ -204,8 +203,7 @@ article{
     display: inline;        
     color:white;    
     background-color:#0065FC ;    
-    border-radius: 12px;   
-    width: 20px;   
+    border-radius: 12px;          
     padding:8px;
     }
 
@@ -223,14 +221,13 @@ article{
     margin:20px 0px 5px 0px;
     font-size:1em;
     }
-
 .partie-filtre{
     display:flex;
     flex-flow: row wrap;
     justify-content:flex-start;
     font-weight: bold;
     width: 100%;
-    padding:5px 0px 10px 0px;    
+    padding:20px 0px 15px 0px;    
     }
 
 .choix-filtres{
@@ -259,6 +256,7 @@ article{
 .texte-bouton{
     padding:0px 10px ;   
     font-weight : bold;
+    background-color: white;
     border:none;
     }
 
@@ -272,9 +270,8 @@ article{
     flex-direction: row ;
     justify-content: center;
     align-items: center;
-    width:100%;
-    padding : 0px 5px 0px 0px;
-    margin:0px 0px 15px 0px;    
+    width:100%;  
+    margin-bottom: 15px;       
     }  
 
 .iconeinfo{
@@ -294,12 +291,12 @@ article{
 .texte-info{
     font-size: 0.9em;
     font-weight: normal;
-    width: 100%;
-    margin: 0px 10px 0px 0px;    
+    width: 100%;        
     }
 
+
 /*---hebergement---*/
-.hebergements{
+#hebergements{
     margin:10px 0px; 
     background-color: white;   
     }
@@ -319,7 +316,7 @@ article{
     background-color:white ;
     Height:10em;
     width:100%;          
-    margin:10px 0px;    
+    margin:10px 0px 20px 0px;    
     } 
     
 .image-verticale{
@@ -335,8 +332,24 @@ article{
     flex-direction: column;
     justify-content: space-evenly;
     }
-   
+
+.afficher-plus{
+    font-size:0.9em;
+    font-weight:bold; 
+    }
+    
 /*---aside---*/
+.aside{
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    }
+.titre-populaire{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 15px 15px 0px 15px;
+    }
 .lien-aside{
     display:block;    
     width: 100%;
@@ -352,15 +365,6 @@ article{
     margin: 0px;   
     padding:0px 15px;
     }
-
-.titre-populaire{
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
-    padding: 15px 15px 0px 15px;
-    }
-
 .annonce-horizontale{
     display: flex;
     flex-direction: row;        
@@ -375,38 +379,16 @@ article{
     display: inline-block;    
     width: 40%;   
     height: 100%;    
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 0px 0px 10px;
     object-fit: cover;               
     }
-
-.descriptif-annonce-horizontale{
-    display: flex;  
-    flex-direction: column;  
-    width: 50%;
-    justify-content: space-between;
-    padding:0px 0px 0px 10px;
-    }
-
 .hotel-prix{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    }    
-.afficher-plus{
-    padding:0px 0px 10px 0px;    
-    }
-    
-
+    } 
+ 
 /*---activité----*/
-.conteneur-activites{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin:0px;   
-    padding:0px 15px;
-    }
-
 .image-activite{    
     width: 100%;
     height:100%;
@@ -419,32 +401,10 @@ article{
     margin:10px;
     }
 
-/*---footer---*/
-.titre-footer{
-    display:flex;
-    justify-content: flex-start;
-    width:100%;
-    margin:15px 0px 8px 0px;
-    font-weight: bolder;
+.titre-activite{
+    padding:15px 30px 20px 0px;
     }
 
-.conteneur-footer{
-    display:flex !important;
-    flex-direction: column;    
-    justify-content: space-around;   
-    margin:0px;
-    padding:0px 15px;
-    }
-
-.nav-footer{
-    display:flex!important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    Height:4em;
-    width:100%;
-    Padding:0px;
-    }
 
 
 
