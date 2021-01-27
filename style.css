@@ -349,12 +349,6 @@ article{
     margin: 0px;
     padding: 15px 15px 0px 15px;
     }
-.lien-aside{
-    display:block;    
-    width: 100%;
-    position:absolute;
-    z-index:2;
-    }
 
 .conteneur-annonce-populaire{
     display:flex;
@@ -369,8 +363,7 @@ article{
     flex-direction: row;        
     background-color: white;
     height:7em; 
-    width: 100%; 
-    border-radius: 10px 10px; 
+    width: 100%;     
     margin:10px 0px ;  
     }
 

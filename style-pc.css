@@ -1,5 +1,3 @@
-/*--generale---*/
-
 h1{
     font-size:0.8em;    
     margin: 10px 0px;    
@@ -21,7 +19,7 @@ p{
 
 .logo{
     position:absolute;        
-    top:35px;   
+    top:30px;   
     }
 
 /*-------header-----*/   
@@ -157,17 +155,13 @@ header{margin-top: 40px;}
     }
 
 .annonce-horizontale{
-    display: flex;
-    flex-direction: row;        
-    background-color: white;
-    height:6em; 
-    width: 100%; 
-    border-radius: 10px 10px; 
-    margin:10px 0px ;  
+    height:6em;     
     } 
 
 .descriptif-annonce-horizontale{
     padding:0px 0px 0px 10px;
+    width: 50%; 
+    height:40%;
     }
          
 .annonce-centrale{
@@ -212,7 +206,7 @@ h3{font-size:0.8em;}
     Height:8em;
     width:27%;          
     margin:15px;
-    } 
+    }     
 
 .hotel-prix{width: auto;}    
 
@@ -324,319 +318,3 @@ h3{font-size:0.8em;}
     padding:2px;
     }
 
-/*--generale---*/
-
-h1{
-    font-size:0.8em;    
-    margin: 10px 0px;    
-    }
-
-h2{
-    font-size:0.9em;
-    font-weight: bolder;
-    }
-
-p{
-    font-size:0.7em;
-    font-weight: lighter;
-    }
-
- .prix-nuit{
-     font-size:0.7em;     
-    }
-
-.logo{
-    position:absolute;        
-    top:25px;
-    margin-bottom: 5px;
-    }
-
-/*-------header-----*/   
-header{margin-top: 40px;}
-
-.header-nav{
-    display:flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 35px;
-    }
-
-.navigation{
-    display:inline;
-    text-align: right;
-    padding:0px 20px;
-    }
-
-.nav-lien{                
-    border-bottom: none;      
-    font-size: 0.8em;
-    font-weight: bolder;
-    padding:35px; 
-    }    
-
-.nav-lien:hover{
-    border-top: solid 3px #0065FC ; 
-    border-bottom: none ;         
-    color:#0065FC ;        
-    }
-
-.inscription{
-    font-size:0.9em;
-    margin:0px;
-    }   
-
-/*----rechercher----*/
-.bouton-primaire{
-    justify-content: left;
-    width:35%;    
-    }
-
-.bouton-primaire .fa-search{
-    display:none; 
-    padding:10px     
-    }   
-  
-.bouton-rechercher{
-    display: inline-flex;              
-    height : 100%;             
-    background-color:#0065FC;
-    border-radius:0px 12px 12px 0px;  
-    }   
-
-.bouton-primaire .texte-bouton{
-    color:white;
-    font-size:0.7em;
-    padding:14px;
-    }
-    
-.fa-map-marker-alt{
-    font-size:0.9em;
-    background-color:#F2F2F2;
-    padding:14px;    
-    }
-
-.recherche-ville{
-    display:inline;
-    text-align:left;
-    font-size: 0.7em;  
-    width:50%;
-    margin:8px;
-    }   
-
-/*---filtres---*/
-.filtres{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items:center;
-    }
-
-.filtres-titre{
-    display:flex;
-    margin:0px;
-    padding: 0 20px 0px 0px;
-    font-size:1em;
-    font-weight: bolder;
-    }
-
-.partie-filtre .texte-bouton{
-    font-size:0.9em;
-    padding:0px 10px;
-    }
-    
-.filtres-icones{
-    height:30px;
-    width: 30px;
-    }
-
-.choix-filtres{
-    margin:3px 10px 0px 0px;
-    padding:0px;
-    }
-
-.texte-info{
-    font-size: 0.7em;
-    }
-.info{margin-top:5px;}
-  
-/*aside*/
-.titre-populaire{
-    padding:15px 30px 20px 30px;
-    font-weight: 900;
-    }
-
-.aside{
-    width:30%;
-    }
-
-.conteneur-annonce-populaire{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;   
-    padding:0px 35px;
-    }
-
-.annonce-horizontale{
-    display: flex;
-    flex-direction: row;        
-    background-color: white;
-    height:6em; 
-    width: 100%; 
-    border-radius: 10px 10px; 
-    margin:10px 0px ;  
-    } 
-
-.annonce-centrale{
-    display:flex;
-    flex-direction: row-reverse;   
-    justify-content: space-between; 
-    margin:25px 0px;       
-    }
-
-.image-horizontale{            
-        border-radius: 10px 0px 0px 10px;                     
-        }         
-        
-/*-----hebergements------*/
-h3{font-size:0.8em;}
-
-.titre-hebergement{
-    padding-left: 40px;
-    font-weight: 900;
-    }
-
-.hebergements{
-    width: 67%;
-    margin:0px 25px 0px 0px;
-    background-color: #f2f2f2;
-    }
-
-.conteneur-annonces-hebergement{
-    flex-flow: row wrap;    
-    justify-content: space-between;  
-    align-content: center;             
-    margin:0px;
-    padding:0px 20px;
-    }
-
-.image-verticale{
-    max-height: 50%;
-    }
-
-.annonce-verticale{
-    Height:8em;
-    width:27%;          
-    margin:15px;
-    } 
-
-.hotel-prix{width: auto;}    
-
-.afficher-plus{padding: 25px 40px;}
-
-/*------activités----*/
-.titre-activite{
-    padding:15px 30px 20px 0px;
-    }
-
-.activites{
-    padding:20px 0px;
-    height:40%;    
-    }
-
-.conteneur-activites{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: 8em 2em 2em 6em;
-    grid-column-gap:35px;
-    justify-items: center;
-    align-items:center;   
-    margin:0px;
-    padding:0px 0px 15px 0px;        
-    }
-
-.image-activite{    
-    border-radius: 10px 10px 0px 0px;    
-    }
-    
-.vieux-port{
-    height:100%;
-    width:100%;
-    grid-column:1/2;
-    grid-row:1/5;
-    padding:0px;
-    margin:0px;  
-    }
-
-.fort{
-    height:100%;
-    width:100%;
-    grid-column:2/3;
-    grid-row:1/3;
-    margin:0px;  
-    }
-
-.iles{
-    height:100%;
-    width:100%;
-    grid-column:2/3;
-    grid-row:4/5;
-    margin:0px;  
-    }
-
-.calanques{
-    height:100%;
-    width:100%;
-    grid-column:3/4;
-    grid-row:1/5;
-    margin:0px;  
-    }
-
-.notre-dame{
-    height:100%;
-    width:100%;
-    grid-column:4/5;
-    grid-row:1/2;
-    margin:0px;  
-    }
-    
-.parc{
-    height:100%;
-    width:100%;    
-    grid-column:4/5;
-    grid-row:3/5;
-    margin:0px;  
-    }
-
-/*footer*/
-.conteneur-footer{
-    display:flex;
-    flex-direction: row;
-    justify-content:flex-start ;
-    padding:30px 0px;
-    margin-bottom: 25px;
-    }
-
-.categorie-nav{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin:0px 20px;
-    padding:0px 120px 0px 0px;
-   }
-
-.h3{
-    margin-bottom:10px;
-    }
-
-.nav-footer{
-    justify-content: flex-start;
-    }
-
-.lien-footer{
-    font-size:0.8em;
-    padding:2px;
-    }
