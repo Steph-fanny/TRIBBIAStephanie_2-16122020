@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*----navigation----*/  
  .logo{
     float:inline-start;
@@ -79,3 +80,86 @@
     width:100%;
     Padding:0px;
     }
+=======
+/*----navigation----*/  
+ .logo{
+    float:inline-start;
+    margin:10px 0px 5px 0px;
+    }
+    
+.inscription{
+        float:inline-end;       
+        margin:20px 0px;
+        }
+    
+.navigation{
+    display : flex;     
+    justify-content: space-around;  
+    width: 100%; 
+    padding:0px;   
+    }
+     
+
+/*---hebergement---*/
+.descriptif-annonce-verticale{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+   
+/*---aside---*/
+
+.conteneur-annonce-populaire{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;   
+    padding:0px 15px;
+    }
+
+.descriptif-annonce-horizontale{
+    display: flex;  
+    flex-direction: column;  
+    width: 50%;
+    justify-content: space-between;
+    padding:0px 0px 0px 10px;
+    }
+ 
+/*---activité----*/
+.conteneur-activites{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0px;   
+    padding:0px 15px;
+    }
+
+/*---footer---*/
+.titre-footer{
+    display:flex;
+    justify-content: flex-start;
+    width:100%;
+    margin:15px 0px 8px 0px;
+    font-weight: bolder;
+    }
+
+.conteneur-footer{
+    display:flex !important;
+    flex-direction: column;    
+    justify-content: space-around;   
+    margin:0px;
+    padding:0px 15px;
+    }
+
+.nav-footer{
+    display:flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    Height:4em;
+    width:100%;
+    Padding:0px;
+    }
+>>>>>>> 9833e1b7f6db9b71ad9149708bc6e3f2e4d4276b
